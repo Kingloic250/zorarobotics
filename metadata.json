@@ -1,0 +1,8 @@
+{
+  "name": "ZoraBots Africa",
+  "description": "Bringing the world's most advanced humanoid robots to Africa. Pioneering AI and robotics in Rwanda and across the continent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
