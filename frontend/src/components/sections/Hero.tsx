@@ -38,7 +38,7 @@ export const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_robotics_lab_1779118111692.png"
+          src="/images/hero_robotics_lab_1779118111692.png"
           alt="ZoraBots Africa"
           className="w-full h-full object-cover"
         />

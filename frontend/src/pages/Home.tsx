@@ -15,10 +15,10 @@ const sectors = [
 ];
 
 const featuredRobots = [
-  { name: 'NAO', sectorEn: 'Education & Research', sectorFr: 'Éducation & Recherche', image: '/src/assets/images/NAO Robot.jpg' },
-  { name: 'Cruzr', sectorEn: 'Retail & Healthcare', sectorFr: 'Commerce & Santé', image: '/src/assets/images/Cruzr Robot.jpg' },
-  { name: 'Adibot', sectorEn: 'Healthcare & Security', sectorFr: 'Santé & Sécurité', image: '/src/assets/images/Adibot.jpg' },
-  { name: 'Spot', sectorEn: 'Mining, Security & Industry', sectorFr: 'Mines, Sécurité & Industrie', image: '/src/assets/images/Spot Robot.jpg' },
+  { name: 'NAO', sectorEn: 'Education & Research', sectorFr: 'Éducation & Recherche', image: '/images/NAO Robot.jpg' },
+  { name: 'Cruzr', sectorEn: 'Retail & Healthcare', sectorFr: 'Commerce & Santé', image: '/images/Cruzr Robot.jpg' },
+  { name: 'Adibot', sectorEn: 'Healthcare & Security', sectorFr: 'Santé & Sécurité', image: '/images/Adibot.jpg' },
+  { name: 'Spot', sectorEn: 'Mining, Security & Industry', sectorFr: 'Mines, Sécurité & Industrie', image: '/images/Spot Robot.jpg' },
 ];
 
 export const Home = () => {

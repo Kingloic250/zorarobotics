@@ -42,7 +42,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src="/src/assets/logo.jpeg"
+            src="/images/logo.jpeg"
             alt="ZoraBots Africa"
             className="h-10 w-auto"
           />
