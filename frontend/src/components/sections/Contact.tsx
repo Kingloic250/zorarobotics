@@ -16,7 +16,7 @@ export const ContactSection = () => {
       title2: 'ROBOTICS PROJECT',
       description: 'Whether you are looking to automate a single facility or deploy a robotics ecosystem across Africa, our team is ready to help.',
       emailLabel: 'Email Us',
-      email: 'Zorarobotics@gmail.com',
+      email: 'zorarobotics@gmail.com',
       phoneLabel: 'Call Us',
       phone: '+250 788 303 027',
       addressLabel: 'Visit Our Lab',
@@ -44,7 +44,6 @@ export const ContactSection = () => {
       phone: '+250 788 303 027',
       addressLabel: 'Visitez Notre Labo',
       address: 'KG 8 Avenue, 31 Kigali, Rwanda',
-      website: 'zorabotsafrica.rw',
       formName: 'Nom Complet',
       formEmail: 'Email Professionnel',
       formOrg: 'Organisation',
@@ -137,15 +136,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 group">
-                <div className="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:border-cyan group-hover:text-cyan transition-all">
-                  <Globe size={18} />
-                </div>
-                <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">Website</p>
-                  <a href="https://www.zorabotsafrica.rw" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white hover:text-cyan transition-colors">{c.website}</a>
-                </div>
-              </div>
+              
             </div>
 
             <div className="flex gap-4 mt-12">

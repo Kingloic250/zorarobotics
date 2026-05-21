@@ -150,14 +150,6 @@ export const RobotsPage = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1 gap-2 text-[10px]">
-                      <Info size={12} /> {language === 'en' ? 'Specs' : 'Spécs'}
-                    </Button>
-                    <Button variant="secondary" size="sm" glow className="flex-1 gap-2 text-[10px]">
-                      <Eye size={12} /> {language === 'en' ? 'View' : 'Voir'}
-                    </Button>
-                  </div>
                 </div>
               </GlassCard>
             </motion.div>

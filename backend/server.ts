@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import nodemailer from 'nodemailer';
 import fs from 'fs';
@@ -59,7 +60,7 @@ app.post('/api/contact', async (req, res) => {
 
       await transporter.sendMail({
         from: `"ZoraBots Website" <${process.env.SMTP_USER}>`,
-        to: 'Zorarobotics@gmail.com',
+        to: process.env.SMTP_TO || process.env.SMTP_USER,
         subject: `New Inquiry from ${name} — ${sector || 'General'}`,
         html: `
           <h2>New Contact Form Submission</h2>
@@ -93,4 +94,9 @@ if (fs.existsSync(frontendDist)) {
 
 app.listen(PORT, () => {
   console.log(`ZoraBots contact server running on http://localhost:${PORT}`);
+  if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
+    console.log(`SMTP configured for ${process.env.SMTP_USER} via ${process.env.SMTP_HOST}`);
+  } else {
+    console.log('SMTP not configured — submissions saved to submissions.json only');
+  }
 });
