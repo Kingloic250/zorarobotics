@@ -14,7 +14,7 @@ export const About = () => {
       subtitle: '"AI stands for African Intelligence."',
       tagline: 'ZoraBots Africa Ltd is a subsidiary of ZoraBots (Belgium), headquartered in Kigali, Rwanda. Founded in 2019, we are the first company to offer service humanoid robots across Africa.',
       desc1: 'We assemble and deploy robots with value-added solutions, using components sourced from Europe, South Korea, and China. Our mission is to be Africa\'s most impact-driven partner in the adoption of emerging technologies in Robotics and Artificial Intelligence.',
-      desc2: 'We accelerate Africa\'s transformation into a knowledge-driven, technology-powered continent — starting from Rwanda.',
+      desc2: 'We accelerate Africa\'s transformation into a knowledge-driven, technology-powered continent starting from Rwanda.',
       values: [
         { icon: Target, title: 'Mission', desc: 'Africa\'s most impact-driven partner in robotics and AI adoption.' },
         { icon: Users, title: 'Team', desc: '11–50 employees in Kigali, growing across East Africa.' },

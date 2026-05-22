@@ -136,7 +136,17 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              
+              <div className="rounded-sm overflow-hidden border border-white/10">
+                <iframe
+                  src="https://www.google.com/maps?q=KG+8+Avenue+31+Kigali+Rwanda&output=embed"
+                  width="100%"
+                  height="220"
+                  style={{ filter: 'invert(0.9) hue-rotate(180deg)' }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={language === 'en' ? 'ZoraBots Lab Location' : "Emplacement du Labo ZoraBots"}
+                />
+              </div>
             </div>
 
             <div className="flex gap-4 mt-12">
