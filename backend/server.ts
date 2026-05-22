@@ -100,3 +100,6 @@ app.listen(PORT, () => {
     console.log('SMTP not configured — submissions saved to submissions.json only');
   }
 });
+
+
+export default app;
