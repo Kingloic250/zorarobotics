@@ -13,7 +13,7 @@ export const Hero = () => {
       headline1: 'Bringing the World\'s Most',
       headlineSpan: 'Advanced Humanoid Robots',
       headline2: 'to Africa.',
-      description: 'ZoraBots Africa — Pioneering AI and Robotics in Rwanda and across the continent, transforming Healthcare, Education, Industry and more.',
+      description: 'ZoraBots Africa Pioneering AI and Robotics in Rwanda and across the continent, transforming Healthcare, Education, Industry and more.',
       cta1: 'Explore Our Robots',
       cta2: 'Partner With Us',
       scroll: 'Scroll to Discover',
