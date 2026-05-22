@@ -6,8 +6,8 @@
     },
     "backend": {
       "root": "backend",
-      "routePrefix": "/_/backend",
-      "framework": "node"
+      "entrypoint": "backend/server.ts",
+      "routePrefix": "/_/backend"
     }
   }
 }
