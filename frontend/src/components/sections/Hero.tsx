@@ -57,7 +57,7 @@ export const Hero = () => {
       headline1: 'Introduire les Robots Humano\u00efdes',
       headlineSpan: 'les Plus Avanc\u00e9s au Monde',
       headline2: 'en Afrique.',
-      description: 'ZoraBots Africa \u2014 Pionniers de l\'IA et de la Robotique au Rwanda et sur tout le continent, transformant la Sant\u00e9, l\u2019\u00c9ducation, l\u2019Industrie et bien plus encore.',
+      description: 'ZoraBots Africa Pionniers de l\'IA et de la Robotique au Rwanda et sur tout le continent, transformant la Sant\u00e9, l\u2019\u00c9ducation, l\u2019Industrie et bien plus encore.',
       cta1: 'D\u00e9couvrez Nos Robots',
       cta2: 'Devenez Partenaire',
       scroll: 'D\u00e9couvrez Plus',
