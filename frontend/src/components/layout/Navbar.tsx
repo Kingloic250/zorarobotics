@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../../lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -10,6 +10,7 @@ export const Navbar = () => {
   const { language, toggleLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -20,17 +21,19 @@ export const Navbar = () => {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    setAboutOpen(false);
   }, [location]);
 
   const navLinks = [
     { nameEn: 'Home', nameFr: 'Accueil', to: '/' },
-    { nameEn: 'About', nameFr: 'À Propos', to: '/about' },
     { nameEn: 'Solutions', nameFr: 'Solutions', to: '/solutions' },
     { nameEn: 'Robots', nameFr: 'Robots', to: '/robots' },
     { nameEn: 'Partnerships', nameFr: 'Partenariats', to: '/partnerships' },
     { nameEn: 'News', nameFr: 'Actualités', to: '/news' },
     { nameEn: 'Contact', nameFr: 'Contact', to: '/contact' },
   ];
+
+  const aboutLabel = language === 'en' ? 'About' : 'À Propos';
 
   return (
     <nav
@@ -52,8 +55,69 @@ export const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <div className="flex gap-6">
-            {navLinks.map((link) => (
+          <div className="flex items-center gap-6">
+            {/* Home */}
+            <Link
+              to="/"
+              className={cn(
+                'text-[10px] font-mono font-medium tracking-widest transition-colors cursor-pointer uppercase',
+                location.pathname === '/' ? 'text-cyan' : 'text-gray-400 hover:text-cyan'
+              )}
+            >
+              {language === 'en' ? 'Home' : 'Accueil'}
+            </Link>
+
+            {/* About Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setAboutOpen(true)}
+              onMouseLeave={() => setAboutOpen(false)}
+            >
+              <span
+                className={cn(
+                  'flex items-center gap-1 text-[10px] font-mono font-medium tracking-widest transition-colors cursor-pointer uppercase',
+                  location.pathname.startsWith('/about') || location.pathname.startsWith('/journey')
+                    ? 'text-cyan'
+                    : 'text-gray-400 hover:text-cyan'
+                )}
+              >
+                {aboutLabel}
+                <ChevronDown size={10} className={cn('transition-transform', aboutOpen && 'rotate-180')} />
+              </span>
+              <AnimatePresence>
+                {aboutOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-xl border border-white/10 p-2 space-y-1"
+                  >
+                    <Link
+                      to="/about"
+                      onClick={() => setAboutOpen(false)}
+                      className={cn(
+                        'block px-4 py-2 text-[10px] font-mono tracking-widest uppercase transition-colors',
+                        location.pathname === '/about' ? 'text-cyan' : 'text-gray-400 hover:text-cyan hover:bg-white/5'
+                      )}
+                    >
+                      {language === 'en' ? 'About Us' : 'À Propos'}
+                    </Link>
+                    <Link
+                      to="/journey"
+                      onClick={() => setAboutOpen(false)}
+                      className={cn(
+                        'block px-4 py-2 text-[10px] font-mono tracking-widest uppercase transition-colors',
+                        location.pathname === '/journey' ? 'text-cyan' : 'text-gray-400 hover:text-cyan hover:bg-white/5'
+                      )}
+                    >
+                      {language === 'en' ? 'Our Journey' : 'Notre Parcours'}
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {navLinks.filter(l => l.to !== '/').map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
@@ -100,7 +164,47 @@ export const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col gap-5 md:hidden"
         >
-          {navLinks.map((link) => (
+          <Link
+            to="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className={cn(
+              'text-lg font-medium transition-colors cursor-pointer uppercase tracking-widest',
+              location.pathname === '/' ? 'text-cyan' : 'text-white/70 hover:text-white'
+            )}
+          >
+            {language === 'en' ? 'Home' : 'Accueil'}
+          </Link>
+          <div>
+            <button
+              onClick={() => setAboutOpen(!aboutOpen)}
+              className={cn(
+                'flex items-center gap-2 text-lg font-medium transition-colors cursor-pointer uppercase tracking-widest w-full text-left',
+                location.pathname.startsWith('/about') || location.pathname.startsWith('/journey') ? 'text-cyan' : 'text-white/70 hover:text-white'
+              )}
+            >
+              {aboutLabel}
+              <ChevronDown size={14} className={cn('transition-transform', aboutOpen && 'rotate-180')} />
+            </button>
+            {aboutOpen && (
+              <div className="ml-4 mt-3 space-y-3 border-l border-white/10 pl-4">
+                <Link
+                  to="/about"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm text-gray-400 hover:text-cyan transition-colors uppercase tracking-widest"
+                >
+                  {language === 'en' ? 'About Us' : 'À Propos'}
+                </Link>
+                <Link
+                  to="/journey"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm text-gray-400 hover:text-cyan transition-colors uppercase tracking-widest"
+                >
+                  {language === 'en' ? 'Our Journey' : 'Notre Parcours'}
+                </Link>
+              </div>
+            )}
+          </div>
+          {navLinks.filter(l => l.to !== '/').map((link) => (
             <Link
               key={link.to}
               to={link.to}

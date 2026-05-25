@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { GlassCard } from '../components/ui/GlassCard';
-import { ExternalLink, Linkedin, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
+import { ExternalLink, Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const pressMentions = [
@@ -67,16 +67,16 @@ const pressMentions = [
     year: '2020',
     url: 'https://www.telegraph.co.uk/global-health/science-and-disease/rwanda-deploys-robots-fight-covid-19/',
   },
-  {
-    outlet: 'CNBC Africa',
-    titleEn: 'Coverage of ZoraBots Africa operations',
-    titleFr: 'Couverture des opérations de ZoraBots Africa',
-    descEn: 'CNBC Africa features ZoraBots Africa\'s expansion and impact across the continent, covering deployments in healthcare, education, and industrial sectors.',
-    descFr: 'CNBC Africa présente l\'expansion et l\'impact de ZoraBots Africa à travers le continent, couvrant les déploiements dans les secteurs de la santé, de l\'éducation et de l\'industrie.',
-    year: '2024',
-    url: '#',
-  },
+
 ];
+
+function XIcon({ size, className }: { size: number; className?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 
 const socialChannels = [
   {
@@ -90,13 +90,13 @@ const socialChannels = [
     contentFr: 'Partenariats, leadership éclairé, recrutement',
   },
   {
-    name: 'X (Twitter)',
+    name: 'X',
     handle: '@zorabots',
     followers: '~449 followers',
     url: 'https://x.com/zorabots',
-    icon: Twitter,
+    icon: XIcon,
     color: 'hover:text-white',
-    contentEn: 'News updates, event participation, tech announcements',
+    contentEn: 'News, event participation, tech announcements',
     contentFr: 'Actualités, participation aux événements, annonces tech',
   },
   {
