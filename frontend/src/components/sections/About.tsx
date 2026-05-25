@@ -96,8 +96,8 @@ export const About = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <GlassCard className="h-full py-10 text-center">
-                  <div className="w-12 h-12 bg-white/5 flex items-center justify-center mx-auto mb-6">
+                <GlassCard className="h-full py-10 text-center group">
+                  <div className="w-12 h-12 bg-white/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
                     <value.icon className="text-cyan" size={24} />
                   </div>
                   <h4 className="text-lg font-bold mb-3 uppercase tracking-wider text-white">{value.title}</h4>
@@ -109,9 +109,12 @@ export const About = () => {
         </div>
 
         {/* Leadership */}
-        <div className="mb-20 p-8 glass-panel border-cyan/10">
+        <motion.div
+          whileHover={{ y: -4, borderColor: 'rgba(0, 242, 255, 0.3)' }}
+          className="mb-20 p-8 glass-panel border-cyan/10 hover:bg-white/5 transition-all duration-300 group"
+        >
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-24 h-24 rounded-full bg-cyan/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-24 h-24 rounded-full bg-cyan/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
               <span className="text-3xl font-bold text-cyan">BK</span>
             </div>
             <div>
@@ -121,7 +124,7 @@ export const About = () => {
               <p className="text-gray-500 text-xs font-mono italic">"{c.leadershipQuote}"</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Timeline */}
         <div className="pt-10 border-t border-white/5">

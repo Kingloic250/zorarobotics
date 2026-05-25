@@ -5,6 +5,12 @@ import { Button } from '../components/ui/Button';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
 import { ArrowRight, GraduationCap, HeartPulse, Factory, Building2, Shield } from 'lucide-react';
+import undpLogo from '../assets/logos/UNDP.png';
+import educLogo from '../assets/logos/download.jpg';
+import healthLogo from '../assets/logos/MINSANTE.png';
+import ictLogo from '../assets/logos/MINICT.png';
+import withinTechLogo from '../assets/logos/WithinTech.png';
+import amaliTechLogo from '../assets/logos/AmaliTech.png';
 
 const sectors = [
   { icon: GraduationCap, nameEn: 'Education', nameFr: 'Éducation', to: '/solutions' },
@@ -141,19 +147,24 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Partners Strip */}
-      <section className="py-16 border-y border-white/5">
-        <div className="container px-6 mx-auto">
-          <div className="text-center mb-10">
-            <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold">
-              {language === 'en' ? 'Trusted By // 04' : 'Approuvé Par // 04'}
-            </span>
-          </div>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-40">
-            {['UNDP', 'Min of Education', 'Min of Health', 'Min of ICT', 'WithinTech', 'AmaliTech'].map((partner) => (
-              <span key={partner} className="text-white/60 text-lg font-bold uppercase tracking-widest font-mono text-sm">
-                {partner}
-              </span>
+      {/* Partners Marquee */}
+      <section className="py-16 border-y border-white/5 overflow-hidden">
+        <div className="text-center mb-10">
+          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold">
+            {language === 'en' ? 'Trusted By // 04' : 'Approuvé Par // 04'}
+          </span>
+        </div>
+        <div className="relative">
+          <div className="marquee-track">
+            {[...Array(2)].map((_, dup) => (
+              <div key={dup} className="flex gap-24 items-center shrink-0">
+                <img src={undpLogo} alt="UNDP" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+                <img src={educLogo} alt="Ministry of Education Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+                <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+                <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+                <img src={withinTechLogo} alt="WithinTech" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+                <img src={amaliTechLogo} alt="AmaliTech" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              </div>
             ))}
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@300;700&family=Inter:wght@300;400;600;800&family=Space+Mono&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -54,5 +54,21 @@
       linear-gradient(to right, rgba(0, 242, 255, 0.05) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 6rem;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }

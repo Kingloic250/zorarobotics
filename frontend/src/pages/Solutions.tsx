@@ -151,10 +151,10 @@ export const SolutionsPage = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GlassCard className="p-8 lg:p-12">
+              <GlassCard className="p-8 lg:p-12 group">
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-white/5 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                       <sector.icon size={32} className="text-cyan" />
                     </div>
                   </div>

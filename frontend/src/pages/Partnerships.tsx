@@ -46,7 +46,7 @@ export const PartnershipsPage = () => {
               { en: 'Rwanda Mines Board', fr: 'Office des Mines du Rwanda' },
             ].map((partner) => (
               <div key={partner.en}>
-                <GlassCard className="text-center py-8">
+                <GlassCard className="text-center py-8 group">
                   <h4 className="text-sm font-bold text-white uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -71,7 +71,7 @@ export const PartnershipsPage = () => {
               { en: 'Digital Transformation Center Rwanda', fr: 'Centre de Transformation Numérique Rwanda' },
             ].map((partner) => (
               <div key={partner.en}>
-                <GlassCard className="text-center py-8">
+                <GlassCard className="text-center py-8 group">
                   <h4 className="text-sm font-bold text-white uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -97,7 +97,7 @@ export const PartnershipsPage = () => {
               { en: 'University of Aberdeen', fr: 'Université d\'Aberdeen' },
             ].map((partner) => (
               <div key={partner.en}>
-                <GlassCard className="text-center py-8">
+                <GlassCard className="text-center py-8 group">
                   <h4 className="text-sm font-bold text-white uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -160,9 +160,9 @@ export const PartnershipsPage = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <GlassCard className="h-full">
+                <GlassCard className="h-full group">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/5 flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
                       <story.icon size={24} className="text-cyan" />
                     </div>
                     <div>

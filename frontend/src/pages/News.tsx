@@ -6,43 +6,73 @@ import { useLanguage } from '../context/LanguageContext';
 const pressMentions = [
   {
     outlet: 'CGTN Africa',
+    titleEn: 'Rwanda to deploy robots in COVID-19 fight',
+    titleFr: 'Le Rwanda va déployer des robots dans la lutte contre le COVID-19',
+    descEn: 'Rwanda acquires smart anti-epidemic robots from ZoraBots to screen temperatures, deliver food and medicines to COVID-19 patients, and reduce front-line worker exposure.',
+    descFr: 'Le Rwanda acquiert des robots anti-épidémiques intelligents de ZoraBots pour prendre les températures, livrer nourriture et médicaments aux patients COVID-19, et réduire l\'exposition des travailleurs de première ligne.',
+    year: '2020',
+    url: 'https://newsaf.cgtn.com/news/2020-05-21/Rwanda-to-deploy-robots-in-COVID-19-fight-QEG75qMRkk/index.html',
+  },
+  {
+    outlet: 'The New Times Rwanda',
     titleEn: 'Global robotics firm inches closer to launch in Rwanda',
     titleFr: 'Une entreprise mondiale de robotique se rapproche du lancement au Rwanda',
+    descEn: 'ZoraBots Africa, a subsidiary of Belgian robotics company ZoraBots, prepares to establish operations in Rwanda, bringing advanced robotics solutions to the region.',
+    descFr: 'ZoraBots Africa, filiale de la société belge de robotique ZoraBots, se prépare à établir ses activités au Rwanda, apportant des solutions robotiques avancées dans la région.',
     year: '2019',
-    url: '#',
+    url: 'https://www.newtimes.co.rw/article/171271/News/global-robotics-firm-inches-closer-to-launch-in-rwanda',
   },
   {
     outlet: 'UNDP',
-    titleEn: 'Smart Anti-Epidemic Robots deployed to fight COVID-19',
-    titleFr: 'Des robots anti-épidémiques intelligents déployés contre le COVID-19',
+    titleEn: 'UNDP and Government of Rwanda deploy smart anti-epidemic robots to fight COVID-19',
+    titleFr: 'Le PNUD et le gouvernement rwandais déploient des robots anti-épidémiques intelligents contre le COVID-19',
+    descEn: 'UNDP partners with Rwanda and ZoraBots to deploy Adibot and other robots in treatment centres, supporting healthcare workers with disinfection and remote patient monitoring.',
+    descFr: 'Le PNUD s\'associe au Rwanda et à ZoraBots pour déployer Adibot et d\'autres robots dans les centres de traitement, soutenant les agents de santé avec la désinfection et la surveillance à distance des patients.',
     year: '2020',
-    url: '#',
+    url: 'https://www.undp.org/africa/news/undp-and-government-rwanda-deploy-smart-anti-epidemic-robots-fight-against-covid-19',
   },
   {
     outlet: 'Rwanda Ministry of Education',
-    titleEn: 'Partnership to integrate robotics into STEM education',
-    titleFr: 'Partenariat pour intégrer la robotique dans l\'éducation STIM',
+    titleEn: 'Ministry of Education enters partnership with ZoraBots Africa to promote STEM in schools',
+    titleFr: 'Le Ministère de l\'Éducation s\'associe à ZoraBots Africa pour promouvoir les STIM dans les écoles',
+    descEn: 'MINEDUC partners with ZoraBots Africa to integrate robotics and AI into Rwanda\'s STEM curriculum, training teachers and deploying robots in classrooms nationwide.',
+    descFr: 'Le MINEDUC s\'associe à ZoraBots Africa pour intégrer la robotique et l\'IA dans le programme STIM du Rwanda, formant les enseignants et déployant des robots dans les classes à travers le pays.',
     year: '2021',
-    url: '#',
+    url: 'https://www.mineduc.gov.rw/news-detail/the-ministry-of-education-to-enter-into-partnership-with-zorabots-africa-to-promote-stem-in-rwandan-schools',
   },
   {
     outlet: 'Standard Media Kenya',
-    titleEn: 'Robot deployment at Kenyan hospitals',
-    titleFr: 'Déploiement de robots dans les hôpitaux kenyans',
-    year: '2021',
-    url: '#',
+    titleEn: 'Rwandan medical workers deploy robots to minimise coronavirus risk',
+    titleFr: 'Des agents de santé rwandais déploient des robots pour minimiser le risque de coronavirus',
+    descEn: 'Rwandan medics use ZoraBots robots to screen patients, clean rooms with UV-C light, and deliver supplies — reducing direct contact with infected individuals.',
+    descFr: 'Les médecins rwandais utilisent les robots ZoraBots pour examiner les patients, nettoyer les chambres avec la lumière UV-C et livrer des fournitures — réduisant le contact direct avec les personnes infectées.',
+    year: '2020',
+    url: 'https://www.standardmedia.co.ke/article/2001373595/rwandan-medical-workers-deploy-robots-to-minimise-coronavirus-risk',
   },
   {
     outlet: 'KT Press',
-    titleEn: 'Rwanda Day Washington D.C. tech showcase',
-    titleFr: 'Vitrine technologique au Rwanda Day Washington D.C.',
+    titleEn: 'Rwanda Day: Tech innovations to be showcased in Washington D.C.',
+    titleFr: 'Rwanda Day : Les innovations technologiques présentées à Washington D.C.',
+    descEn: 'ZoraBots Africa featured among Rwanda\'s top tech innovations at Rwanda Day in Washington D.C., showcasing robotics solutions on an international stage.',
+    descFr: 'ZoraBots Africa figure parmi les meilleures innovations technologiques du Rwanda au Rwanda Day à Washington D.C., présentant des solutions robotiques sur la scène internationale.',
     year: '2024',
-    url: '#',
+    url: 'https://www.ktpress.rw/2024/02/rwanda-day-tech-innovations-to-be-showcased-in-washington-dc/',
+  },
+  {
+    outlet: 'The Telegraph',
+    titleEn: 'Rwanda deploys robots to fight COVID-19',
+    titleFr: 'Le Rwanda déploie des robots pour lutter contre le COVID-19',
+    descEn: 'The Telegraph covers Rwanda\'s pioneering use of ZoraBots\' robots in the COVID-19 response, highlighting how technology is protecting healthcare workers in East Africa.',
+    descFr: 'The Telegraph couvre l\'utilisation pionnière par le Rwanda des robots de ZoraBots dans la réponse au COVID-19, soulignant comment la technologie protège les agents de santé en Afrique de l\'Est.',
+    year: '2020',
+    url: 'https://www.telegraph.co.uk/global-health/science-and-disease/rwanda-deploys-robots-fight-covid-19/',
   },
   {
     outlet: 'CNBC Africa',
     titleEn: 'Coverage of ZoraBots Africa operations',
     titleFr: 'Couverture des opérations de ZoraBots Africa',
+    descEn: 'CNBC Africa features ZoraBots Africa\'s expansion and impact across the continent, covering deployments in healthcare, education, and industrial sectors.',
+    descFr: 'CNBC Africa présente l\'expansion et l\'impact de ZoraBots Africa à travers le continent, couvrant les déploiements dans les secteurs de la santé, de l\'éducation et de l\'industrie.',
     year: '2024',
     url: '#',
   },
@@ -146,12 +176,15 @@ export const NewsPage = () => {
                       <span className="text-[10px] font-mono text-cyan uppercase tracking-widest font-bold">{item.outlet}</span>
                       <span className="text-[9px] font-mono text-gray-600">{item.year}</span>
                     </div>
-                    <p className="text-sm text-white font-medium mb-4 group-hover:text-cyan transition-colors">
+                    <p className="text-sm text-white font-medium mb-2 group-hover:text-cyan transition-colors">
                       {language === 'en' ? item.titleEn : item.titleFr}
+                    </p>
+                    <p className="text-[11px] text-gray-500 font-light mb-4 leading-relaxed">
+                      {language === 'en' ? item.descEn : item.descFr}
                     </p>
                     <div className="flex items-center gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-widest">
                       {language === 'en' ? 'Read More' : 'Lire Plus'}
-                      <ExternalLink size={10} />
+                      <ExternalLink size={10} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                     </div>
                   </GlassCard>
                 </a>

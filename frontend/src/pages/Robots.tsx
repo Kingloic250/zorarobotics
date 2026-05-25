@@ -121,14 +121,14 @@ export const RobotsPage = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GlassCard className="p-0 group hover:border-cyan/30 transition-all duration-500 overflow-hidden flex flex-col sm:flex-row bg-black/40">
-                <div className="relative w-48 h-48 overflow-hidden flex-shrink-0">
+              <GlassCard className="p-0 group hover:border-cyan/30 transition-all duration-500 overflow-hidden flex flex-col bg-black/40">
+                <div className="relative w-full h-64 overflow-hidden flex-shrink-0">
                   <img
                     src={robot.image}
                     alt={robot.name}
                     className="w-full h-full object-cover grayscale transition-all duration-700 scale-105 group-hover:scale-100 group-hover:grayscale-0"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-3">
@@ -162,10 +162,10 @@ export const RobotsPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <GlassCard className="p-8 lg:p-12 border-cyan/20 bg-gradient-to-br from-cyan/5 to-transparent">
+          <GlassCard className="p-8 lg:p-12 border-cyan/20 bg-gradient-to-br from-cyan/5 to-transparent group">
             <div className="flex flex-col lg:flex-row gap-8 items-center">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 bg-cyan/10 flex items-center justify-center">
+                <div className="w-20 h-20 bg-cyan/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                   <Cpu size={40} className="text-cyan" />
                 </div>
               </div>
@@ -185,8 +185,8 @@ export const RobotsPage = () => {
                     { icon: Globe, en: 'Virtual & VR', fr: 'Virtuel & VR' },
                     { icon: Code, en: 'No-Code Interface', fr: 'Interface No-Code' },
                   ].map((item) => (
-                    <div key={item.en} className="flex items-center gap-3 p-4 bg-white/5">
-                      <item.icon size={20} className="text-cyan flex-shrink-0" />
+                    <div key={item.en} className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 hover:border-cyan/30 transition-all duration-300 border border-transparent">
+                      <item.icon size={20} className="text-cyan flex-shrink-0 group-hover:scale-110 transition-transform duration-500" />
                       <span className="text-[10px] font-mono text-gray-300 uppercase tracking-widest">
                         {language === 'en' ? item.en : item.fr}
                       </span>

@@ -136,14 +136,12 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="rounded-sm overflow-hidden border border-white/10">
+              <div className="rounded-sm overflow-hidden border border-white/10 w-full" style={{ height: 280 }}>
                 <iframe
-                  src="https://www.google.com/maps?q=KG+8+Avenue+31+Kigali+Rwanda&output=embed"
+                  src="https://maps.google.com/maps?q=KG+8+Avenue+31+Kigali+Rwanda&output=embed&z=15"
                   width="100%"
-                  height="220"
-                  style={{ filter: 'invert(0.9) hue-rotate(180deg)' }}
+                  height="100%"
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                   title={language === 'en' ? 'ZoraBots Lab Location' : "Emplacement du Labo ZoraBots"}
                 />
               </div>
