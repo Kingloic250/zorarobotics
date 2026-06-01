@@ -25,6 +25,7 @@ export const Footer = () => {
     { nameEn: 'Home', nameFr: 'Accueil', to: '/' },
     { nameEn: 'About', nameFr: 'À Propos', to: '/about' },
     { nameEn: 'Our Journey', nameFr: 'Notre Parcours', to: '/journey' },
+    { nameEn: 'Programs', nameFr: 'Programmes', to: '/programs' },
     { nameEn: 'Solutions', nameFr: 'Solutions', to: '/solutions' },
     { nameEn: 'Robots', nameFr: 'Robots', to: '/robots' },
     { nameEn: 'Partnerships', nameFr: 'Partenariats', to: '/partnerships' },

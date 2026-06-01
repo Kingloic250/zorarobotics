@@ -76,7 +76,7 @@ export const Navbar = () => {
               <span
                 className={cn(
                   'flex items-center gap-1 text-[10px] font-mono font-medium tracking-widest transition-colors cursor-pointer uppercase',
-                  location.pathname.startsWith('/about') || location.pathname.startsWith('/journey')
+                  location.pathname.startsWith('/about') || location.pathname.startsWith('/journey') || location.pathname.startsWith('/programs')
                     ? 'text-cyan'
                     : 'text-gray-400 hover:text-cyan'
                 )}
@@ -111,6 +111,16 @@ export const Navbar = () => {
                       )}
                     >
                       {language === 'en' ? 'Our Journey' : 'Notre Parcours'}
+                    </Link>
+                    <Link
+                      to="/programs"
+                      onClick={() => setAboutOpen(false)}
+                      className={cn(
+                        'block px-4 py-2 text-[10px] font-mono tracking-widest uppercase transition-colors',
+                        location.pathname === '/programs' ? 'text-cyan' : 'text-gray-400 hover:text-cyan hover:bg-white/5'
+                      )}
+                    >
+                      {language === 'en' ? 'Programs' : 'Programmes'}
                     </Link>
                   </motion.div>
                 )}
@@ -179,7 +189,7 @@ export const Navbar = () => {
               onClick={() => setAboutOpen(!aboutOpen)}
               className={cn(
                 'flex items-center gap-2 text-lg font-medium transition-colors cursor-pointer uppercase tracking-widest w-full text-left',
-                location.pathname.startsWith('/about') || location.pathname.startsWith('/journey') ? 'text-cyan' : 'text-white/70 hover:text-white'
+                location.pathname.startsWith('/about') || location.pathname.startsWith('/journey') || location.pathname.startsWith('/programs') ? 'text-cyan' : 'text-white/70 hover:text-white'
               )}
             >
               {aboutLabel}
@@ -200,6 +210,13 @@ export const Navbar = () => {
                   className="block text-sm text-gray-400 hover:text-cyan transition-colors uppercase tracking-widest"
                 >
                   {language === 'en' ? 'Our Journey' : 'Notre Parcours'}
+                </Link>
+                <Link
+                  to="/programs"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm text-gray-400 hover:text-cyan transition-colors uppercase tracking-widest"
+                >
+                  {language === 'en' ? 'Programs' : 'Programmes'}
                 </Link>
               </div>
             )}
