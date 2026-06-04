@@ -50,7 +50,7 @@ export const Navbar = () => {
             className="h-10 w-auto"
           />
           <span className="font-sans text-lg font-extrabold tracking-tighter text-white uppercase hidden sm:block">
-            ZoraBots <span className="text-cyan">Africa</span>
+            Zorarobotics
           </span>
         </Link>
 
