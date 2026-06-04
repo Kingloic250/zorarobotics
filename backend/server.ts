@@ -4,7 +4,7 @@ import app from '../api/index.js';
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
-  console.log(`ZoraBots contact server running on http://localhost:${PORT}`);
+  console.log(`Zorarobotics contact server running on http://localhost:${PORT}`);
   if (process.env.RESEND_API_KEY) {
     console.log(`Resend configured — sending to ${process.env.RESEND_TO || 'zorarobotics@gmail.com'}`);
   } else {

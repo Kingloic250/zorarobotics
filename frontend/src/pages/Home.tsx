@@ -154,18 +154,24 @@ export const Home = () => {
             {language === 'en' ? 'Trusted By // 04' : 'Approuvé Par // 04'}
           </span>
         </div>
-        <div className="relative">
+        <div className="relative marquee-section">
           <div className="marquee-track">
-            {[...Array(2)].map((_, dup) => (
-              <div key={dup} className="flex gap-24 items-center shrink-0">
-                <img src={undpLogo} alt="UNDP" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-                <img src={educLogo} alt="Ministry of Education Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-                <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-                <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-                <img src={withinTechLogo} alt="WithinTech" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-                <img src={amaliTechLogo} alt="AmaliTech" className="h-12 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              </div>
-            ))}
+            <div className="flex gap-24 items-center shrink-0">
+              <img src={undpLogo} alt="UNDP" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={withinTechLogo} alt="WithinTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={amaliTechLogo} alt="AmaliTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+            </div>
+            <div className="flex gap-24 items-center shrink-0">
+              <img src={undpLogo} alt="UNDP" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={withinTechLogo} alt="WithinTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={amaliTechLogo} alt="AmaliTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+            </div>
           </div>
         </div>
       </section>

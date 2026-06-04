@@ -142,7 +142,7 @@ export const ContactSection = () => {
                   width="100%"
                   height="100%"
                   loading="lazy"
-                  title={language === 'en' ? 'ZoraBots Lab Location' : "Emplacement du Labo ZoraBots"}
+                  title={language === 'en' ? 'Zorarobotics Lab Location' : "Emplacement du Labo Zorarobotics"}
                 />
               </div>
             </div>
@@ -151,7 +151,7 @@ export const ContactSection = () => {
               {[
                 { icon: Linkedin, url: 'https://rw.linkedin.com/company/zorabots-africa' },
                 { icon: Twitter, url: 'https://x.com/zorabots' },
-                { icon: Facebook, url: 'https://www.facebook.com/WeAreZoraBots/' },
+                { icon: Facebook, url: 'https://www.facebook.com/WeAreZorarobotics/' },
                 { icon: Instagram, url: 'https://www.instagram.com/zorabots_africa/' },
                 { icon: Youtube, url: 'https://www.youtube.com/channel/UC6FWjluEyNztGFmWrlEzQcw' },
               ].map((item, i) => (

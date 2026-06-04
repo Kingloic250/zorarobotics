@@ -26,7 +26,7 @@ app.post('/api/contact', async (req, res) => {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
-        from: process.env.RESEND_FROM || 'ZoraBots Website <onboarding@resend.dev>',
+        from: process.env.RESEND_FROM || 'Zorarobotics Website <onboarding@resend.dev>',
         to: process.env.RESEND_TO || 'zorarobotics@gmail.com',
         subject: `New Inquiry from ${name} — ${sector || 'General'}`,
         html: `

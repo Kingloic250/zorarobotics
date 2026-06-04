@@ -3,8 +3,8 @@ import { GlassCard } from '../components/ui/GlassCard';
 import { useLanguage } from '../context/LanguageContext';
 
 const timeline = [
-  { year: 'Oct 2019', en: 'ZoraBots Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'ZoraBots Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
-  { year: 'Nov 2019', en: 'ZoraBots Africa announced as Rwanda\'s first robotics company', fr: 'ZoraBots Africa annoncée comme première entreprise de robotique au Rwanda' },
+  { year: 'Oct 2019', en: 'Zorarobotics Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Zorarobotics Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
+  { year: 'Nov 2019', en: 'Zorarobotics Africa announced as Rwanda\'s first robotics company', fr: 'Zorarobotics Africa annoncée comme première entreprise de robotique au Rwanda' },
   { year: 'Jan 2020', en: 'Operations begin in Kigali; first Zora Shop opens', fr: 'Début des opérations à Kigali; première Zora Shop ouverte' },
   { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },
   { year: 'Sep 2021', en: 'Partnership with Rwanda Ministry of Education for STEM', fr: 'Partenariat avec le Ministère de l\'Éducation du Rwanda pour les STIM' },
@@ -32,8 +32,8 @@ export const JourneyPage = () => {
           </h2>
           <p className="text-gray-400 text-lg font-light">
             {language === 'en'
-              ? 'From our founding to today — tracking the milestones that define ZoraBots Africa.'
-              : 'De notre fondation à aujourd\'hui les étapes qui définissent ZoraBots Africa.'}
+              ? 'From our founding to today — tracking the milestones that define Zorarobotics Africa.'
+              : 'De notre fondation à aujourd\'hui les étapes qui définissent Zorarobotics Africa.'}
           </p>
         </motion.div>
 

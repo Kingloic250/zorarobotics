@@ -41,11 +41,11 @@ export const Footer = () => {
             <Link to="/" className="flex items-center gap-3">
               <img
                 src="/images/logo.jpeg"
-                alt="ZoraBots Africa"
+                alt="Zorarobotics Africa"
                 className="h-10 w-auto"
               />
               <span className="font-sans text-lg font-extrabold tracking-tighter text-white uppercase">
-                ZoraBots <span className="text-cyan">Africa</span>
+                Zorarobotics <span className="text-cyan">Africa</span>
               </span>
             </Link>
             <p className="text-gray-500 text-xs font-mono uppercase tracking-widest leading-relaxed max-w-xs">
@@ -123,7 +123,7 @@ export const Footer = () => {
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-600 text-[10px] font-mono uppercase tracking-widest">
-            &copy; 2026 ZoraBots Africa Ltd. All Rights Reserved.
+            &copy; 2026 Zorarobotics Africa Ltd. All Rights Reserved.
           </p>
           <span className="text-gray-600 text-[10px] font-mono uppercase tracking-widest">
             {language === 'en' ? 'Kigali, Rwanda' : 'Kigali, Rwanda'}

@@ -32,7 +32,7 @@ export const About = () => {
       title1: 'Pionnier de la Robotique',
       titleSpan: 'à Travers l\'Afrique',
       subtitle: '"L\'IA signifie Intelligence Africaine."',
-      tagline: 'Zorarobotics Ltd est une filiale de ZoraBots (Belgique), basée à Kigali, Rwanda. Fondée en 2019, nous sommes la première entreprise à proposer des robots humanoïdes de service à travers l\'Afrique.',
+      tagline: 'Zorarobotics Ltd est une filiale de Zorarobotics (Belgique), basée à Kigali, Rwanda. Fondée en 2019, nous sommes la première entreprise à proposer des robots humanoïdes de service à travers l\'Afrique.',
       desc1: 'Nous assemblons et déployons des robots avec des solutions à valeur ajoutée, utilisant des composants provenant d\'Europe, de Corée du Sud et de Chine. Notre mission est d\'être le partenaire le plus axé sur l\'impact en Afrique dans l\'adoption des technologies émergentes en Robotique et en Intelligence Artificielle.',
       desc2: 'Nous accélérons la transformation de l\'Afrique en un continent axé sur la connaissance et la technologie — en commençant par le Rwanda.',
       values: [
@@ -52,8 +52,8 @@ export const About = () => {
   const c = content[language];
 
   const timeline = [
-    { year: 'Oct 2019', en: 'ZoraBots Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'ZoraBots Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
-    { year: 'Nov 2019', en: 'ZoraBots Africa announced as Rwanda\'s first robotics company', fr: 'ZoraBots Africa annoncée comme première entreprise de robotique au Rwanda' },
+    { year: 'Oct 2019', en: 'Zorarobotics Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Zorarobotics Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
+    { year: 'Nov 2019', en: 'Zorarobotics Africa announced as Rwanda\'s first robotics company', fr: 'Zorarobotics Africa annoncée comme première entreprise de robotique au Rwanda' },
     { year: 'Jan 2020', en: 'Operations begin in Kigali; first Zora Shop opens', fr: 'Début des opérations à Kigali; première Zora Shop ouverte' },
     { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },
     { year: 'Sep 2021', en: 'Partnership with Rwanda Ministry of Education for STEM', fr: 'Partenariat avec le Ministère de l\'Éducation du Rwanda pour les STIM' },
