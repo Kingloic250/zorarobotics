@@ -32,7 +32,7 @@ export const About = () => {
       title1: 'Pionnier de la Robotique',
       titleSpan: 'à Travers l\'Afrique',
       subtitle: '"L\'IA signifie Intelligence Africaine."',
-      tagline: 'ZoraBots Africa Ltd est une filiale de ZoraBots (Belgique), basée à Kigali, Rwanda. Fondée en 2019, nous sommes la première entreprise à proposer des robots humanoïdes de service à travers l\'Afrique.',
+      tagline: 'Zorarobotics Ltd est une filiale de ZoraBots (Belgique), basée à Kigali, Rwanda. Fondée en 2019, nous sommes la première entreprise à proposer des robots humanoïdes de service à travers l\'Afrique.',
       desc1: 'Nous assemblons et déployons des robots avec des solutions à valeur ajoutée, utilisant des composants provenant d\'Europe, de Corée du Sud et de Chine. Notre mission est d\'être le partenaire le plus axé sur l\'impact en Afrique dans l\'adoption des technologies émergentes en Robotique et en Intelligence Artificielle.',
       desc2: 'Nous accélérons la transformation de l\'Afrique en un continent axé sur la connaissance et la technologie — en commençant par le Rwanda.',
       values: [
