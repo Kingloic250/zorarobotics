@@ -39,7 +39,7 @@ export const ContactSection = () => {
       title2: 'PROJET DE ROBOTIQUE',
       description: 'Que vous souhaitiez automatiser un seul site ou déployer un écosystème robotique en Afrique, notre équipe est prête à vous aider.',
       emailLabel: 'Envoyez-nous un Email',
-      email: 'Zorarobotics@gmail.com',
+      email: 'zorarobotics@gmail.com',
       phoneLabel: 'Appelez-Nous',
       phone: '+250 788 303 027',
       addressLabel: 'Visitez Notre Labo',

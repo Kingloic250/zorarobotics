@@ -90,8 +90,8 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:Zorarobotics@gmail.com" className="text-gray-500 hover:text-cyan transition-colors text-[10px] font-mono uppercase tracking-widest">
-                  Zorarobotics@gmail.com
+                <a href="mailto:Zorarobotics@gmail.com" className="text-gray-500 hover:text-cyan transition-colors text-[10px] font-mono tracking-widest">
+                  zorarobotics@gmail.com
                 </a>
               </li>
             </ul>
