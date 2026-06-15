@@ -6,6 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 const pressMentions = [
   {
     outlet: 'CGTN Africa',
+    image: '/images/cgtn.png',
     titleEn: 'Rwanda to deploy robots in COVID-19 fight',
     titleFr: 'Le Rwanda va déployer des robots dans la lutte contre le COVID-19',
     descEn: 'Rwanda acquires smart anti-epidemic robots from Zorarobotics to screen temperatures, deliver food and medicines to COVID-19 patients, and reduce front-line worker exposure.',
@@ -15,6 +16,7 @@ const pressMentions = [
   },
   {
     outlet: 'The New Times Rwanda',
+    image: '/images/new times.png',
     titleEn: 'Global robotics firm inches closer to launch in Rwanda',
     titleFr: 'Une entreprise mondiale de robotique se rapproche du lancement au Rwanda',
     descEn: 'Zorarobotics Africa, a subsidiary of Belgian robotics company Zorarobotics, prepares to establish operations in Rwanda, bringing advanced robotics solutions to the region.',
@@ -24,6 +26,7 @@ const pressMentions = [
   },
   {
     outlet: 'UNDP',
+    image: '/images/undp.png',
     titleEn: 'UNDP and Government of Rwanda deploy smart anti-epidemic robots to fight COVID-19',
     titleFr: 'Le PNUD et le gouvernement rwandais déploient des robots anti-épidémiques intelligents contre le COVID-19',
     descEn: 'UNDP partners with Rwanda and Zorarobotics to deploy Adibot and other robots in treatment centres, supporting healthcare workers with disinfection and remote patient monitoring.',
@@ -33,6 +36,7 @@ const pressMentions = [
   },
   {
     outlet: 'Rwanda Ministry of Education',
+    image: '/images/mineduc.png',
     titleEn: 'Ministry of Education enters partnership with Zorarobotics Africa to promote STEM in schools',
     titleFr: 'Le Ministère de l\'Éducation s\'associe à Zorarobotics Africa pour promouvoir les STIM dans les écoles',
     descEn: 'MINEDUC partners with Zorarobotics Africa to integrate robotics and AI into Rwanda\'s STEM curriculum, training teachers and deploying robots in classrooms nationwide.',
@@ -42,6 +46,7 @@ const pressMentions = [
   },
   {
     outlet: 'Standard Media Kenya',
+    image: '/images/standard.png',
     titleEn: 'Rwandan medical workers deploy robots to minimise coronavirus risk',
     titleFr: 'Des agents de santé rwandais déploient des robots pour minimiser le risque de coronavirus',
     descEn: 'Rwandan medics use Zorarobotics robots to screen patients, clean rooms with UV-C light, and deliver supplies — reducing direct contact with infected individuals.',
@@ -51,6 +56,7 @@ const pressMentions = [
   },
   {
     outlet: 'KT Press',
+    image: '/images/KT.png',
     titleEn: 'Rwanda Day: Tech innovations to be showcased in Washington D.C.',
     titleFr: 'Rwanda Day : Les innovations technologiques présentées à Washington D.C.',
     descEn: 'Zorarobotics Africa featured among Rwanda\'s top tech innovations at Rwanda Day in Washington D.C., showcasing robotics solutions on an international stage.',
@@ -60,6 +66,7 @@ const pressMentions = [
   },
   {
     outlet: 'The Telegraph',
+    image: '/images/tel.png',
     titleEn: 'Rwanda deploys robots to fight COVID-19',
     titleFr: 'Le Rwanda déploie des robots pour lutter contre le COVID-19',
     descEn: 'The Telegraph covers Rwanda\'s pioneering use of Zorarobotics\' robots in the COVID-19 response, highlighting how technology is protecting healthcare workers in East Africa.',
@@ -171,7 +178,14 @@ export const NewsPage = () => {
                 transition={{ delay: i * 0.08 }}
               >
                 <a href={item.url} target="_blank" rel="noopener noreferrer" className="block h-full">
-                  <GlassCard className="h-full group cursor-pointer">
+                  <GlassCard className="h-full group cursor-pointer overflow-hidden">
+                    {item.image && (
+                      <div className="relative h-36 overflow-hidden">
+                        <img src={item.image} alt={item.outlet} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      </div>
+                    )}
+                    <div className={item.image ? 'p-5' : 'p-6'}>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[10px] font-mono text-cyan uppercase tracking-widest font-bold">{item.outlet}</span>
                       <span className="text-[9px] font-mono text-gray-600">{item.year}</span>
@@ -185,6 +199,7 @@ export const NewsPage = () => {
                     <div className="flex items-center gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-widest">
                       {language === 'en' ? 'Read More' : 'Lire Plus'}
                       <ExternalLink size={10} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                    </div>
                     </div>
                   </GlassCard>
                 </a>
