@@ -76,7 +76,7 @@ export const Hero = () => {
           loop
           playsInline
           preload="auto"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-40"
         >
           <source src="/videos/adibot-bg.mp4" type="video/mp4" />
         </video>
@@ -119,7 +119,7 @@ export const Hero = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="px-10 border-border text-foreground hover:bg-card uppercase text-sm tracking-widest font-bold">
+                <Button variant="outline" size="lg" className="px-10 border-border text-foreground hover:bg-accent hover:text-white uppercase text-sm tracking-widest font-bold">
                   {c.cta2}
                 </Button>
               </Link>
