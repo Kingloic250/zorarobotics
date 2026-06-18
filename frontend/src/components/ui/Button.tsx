@@ -22,10 +22,10 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const variants = {
-    primary: 'text-accent hover:text-white border border-accent hover:bg-accent transition-all duration-300',
-    secondary: 'text-accent border border-accent/30 hover:bg-accent hover:text-white transition-all duration-300',
-    outline: 'border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300',
-    ghost: 'text-muted hover:text-accent',
+    primary: 'bg-accent text-white hover:bg-accent/90 shadow-lg shadow-accent/20',
+    secondary: 'bg-foreground/10 text-white border border-white/20 hover:bg-accent hover:border-accent hover:text-white transition-all duration-300',
+    outline: 'border border-accent text-white hover:bg-accent transition-all duration-300',
+    ghost: 'text-white/70 hover:text-white',
   };
 
   const sizes = {
