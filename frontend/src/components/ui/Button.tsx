@@ -22,10 +22,10 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const variants = {
-    primary: 'bg-accent text-black hover:bg-accent/90 shadow-lg shadow-accent/20',
-    secondary: 'bg-foreground text-background hover:bg-foreground/90',
-    outline: 'border border-accent text-accent hover:bg-accent hover:text-black transition-all duration-300 button-hover font-mono',
-    ghost: 'hover:bg-accent/10 text-muted hover:text-foreground',
+    primary: 'text-accent hover:text-white border border-accent hover:bg-accent transition-all duration-300',
+    secondary: 'text-accent border border-accent/30 hover:bg-accent hover:text-white transition-all duration-300',
+    outline: 'border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300',
+    ghost: 'text-muted hover:text-accent',
   };
 
   const sizes = {
@@ -42,7 +42,7 @@ export const Button = ({
         'relative inline-flex items-center justify-center rounded-full transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer overflow-hidden',
         variants[variant],
         sizes[size],
-        glow && variant === 'secondary' && 'shadow-[0_0_20px_rgba(0,245,255,0.4)]',
+        glow && variant === 'secondary' && 'shadow-accent/40',
         className
       )}
       {...props}
