@@ -34,7 +34,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="py-20 border-t border-white/5 bg-black/40 relative overflow-hidden backdrop-blur-md">
+    <footer className="py-20 border-t border-border bg-card relative overflow-hidden backdrop-blur-md">
       <div className="container px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
@@ -44,11 +44,11 @@ export const Footer = () => {
                 alt="Zorarobotics Africa"
                 className="h-10 w-auto"
               />
-              <span className="font-sans text-lg font-extrabold tracking-tighter text-white uppercase">
-                Zorarobotics <span className="text-cyan">Africa</span>
+              <span className="font-sans text-lg font-extrabold tracking-tighter text-foreground uppercase">
+                Zorarobotics <span className="text-accent">Africa</span>
               </span>
             </Link>
-            <p className="text-gray-500 text-xs font-mono uppercase tracking-widest leading-relaxed max-w-xs">
+            <p className="text-muted-fg text-xs font-mono uppercase tracking-widest leading-relaxed max-w-xs">
               {language === 'en'
                 ? 'Pioneering AI and Robotics in Rwanda and across the continent.'
                 : 'Pionniers de l\'IA et de la Robotique au Rwanda et sur tout le continent.'}
@@ -56,7 +56,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
+            <h4 className="text-foreground font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
               {language === 'en' ? 'Quick Links' : 'Liens Rapides'}
             </h4>
             <ul className="space-y-4">
@@ -64,7 +64,7 @@ export const Footer = () => {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-gray-500 hover:text-cyan transition-colors text-[10px] font-mono uppercase tracking-widest"
+                    className="text-muted-fg hover:text-accent transition-colors text-[10px] font-mono uppercase tracking-widest"
                   >
                     {language === 'en' ? link.nameEn : link.nameFr}
                   </Link>
@@ -74,23 +74,23 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
+            <h4 className="text-foreground font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
               {language === 'en' ? 'Contact' : 'Contact'}
             </h4>
             <ul className="space-y-4">
-              <li className="text-gray-500 text-[10px] font-mono uppercase tracking-widest">
+              <li className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
                 KG 8 Avenue, 31 Kigali
               </li>
-              <li className="text-gray-500 text-[10px] font-mono uppercase tracking-widest">
+              <li className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
                 Kigali City, Rwanda
               </li>
               <li>
-                <a href="tel:+250788303027" className="text-gray-500 hover:text-cyan transition-colors text-[10px] font-mono uppercase tracking-widest">
+                <a href="tel:+250788303027" className="text-muted-fg hover:text-accent transition-colors text-[10px] font-mono uppercase tracking-widest">
                   +250 788 303 027
                 </a>
               </li>
               <li>
-                <a href="mailto:Zorarobotics@gmail.com" className="text-gray-500 hover:text-cyan transition-colors text-[10px] font-mono tracking-widest">
+                <a href="mailto:Zorarobotics@gmail.com" className="text-muted-fg hover:text-accent transition-colors text-[10px] font-mono tracking-widest">
                   zorarobotics@gmail.com
                 </a>
               </li>
@@ -98,10 +98,10 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
+            <h4 className="text-foreground font-bold mb-6 uppercase tracking-[0.2em] text-[10px] font-mono">
               {language === 'en' ? 'Follow Us' : 'Suivez-Nous'}
             </h4>
-            <p className="text-gray-500 text-[10px] font-mono uppercase tracking-widest mb-6">
+            <p className="text-muted-fg text-[10px] font-mono uppercase tracking-widest mb-6">
               {language === 'en' ? 'Stay connected for the latest in robotics.' : 'Restez connecté pour les dernières novations en robotique.'}
             </p>
             <div className="flex flex-wrap gap-3">
@@ -111,7 +111,7 @@ export const Footer = () => {
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-cyan hover:text-cyan transition-all text-gray-500"
+                  className="w-10 h-10 border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-all text-muted-fg"
                   title={item.label}
                 >
                   <item.icon size={16} />
@@ -121,11 +121,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-600 text-[10px] font-mono uppercase tracking-widest">
+        <div className="pt-10 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
             &copy; 2026 Zorarobotics Africa Ltd. All Rights Reserved.
           </p>
-          <span className="text-gray-600 text-[10px] font-mono uppercase tracking-widest">
+          <span className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
             {language === 'en' ? 'Kigali, Rwanda' : 'Kigali, Rwanda'}
           </span>
         </div>

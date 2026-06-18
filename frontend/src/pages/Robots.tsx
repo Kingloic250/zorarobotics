@@ -99,13 +99,13 @@ export const RobotsPage = () => {
           viewport={{ once: true }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'Product Catalog // 03' : 'Catalogue Produits // 03'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Our Robot Fleet' : 'Notre Flotte de Robots'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'Many advanced robots powered by the ZBOS platform, serving Education, Healthcare, Industry, Hospitality, and Security sectors.'
               : 'Huit robots avancés propulsés par la plateforme ZBOS, servant les secteurs de l\'Éducation, de la Santé, de l\'Industrie, de l\'Hôtellerie et de la Sécurité.'}
@@ -121,7 +121,7 @@ export const RobotsPage = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GlassCard className="p-0 group hover:border-cyan/30 transition-all duration-500 overflow-hidden flex flex-col bg-black/40">
+              <GlassCard className="p-0 group hover:border-accent/30 transition-all duration-500 overflow-hidden flex flex-col bg-card">
                 <div className="relative w-full h-64 overflow-hidden flex-shrink-0">
                   <img
                     src={robot.image}
@@ -132,19 +132,19 @@ export const RobotsPage = () => {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="mb-3">
-                    <h3 className="text-2xl font-extrabold tracking-tight uppercase text-white">{robot.name}</h3>
-                    <span className="text-[10px] font-mono text-cyan uppercase tracking-widest">
+                    <h3 className="text-2xl font-extrabold tracking-tight uppercase text-foreground">{robot.name}</h3>
+                    <span className="text-[10px] font-mono text-accent uppercase tracking-widest">
                       {language === 'en' ? robot.sectorEn : robot.sectorFr}
                     </span>
                   </div>
-                  <p className="text-gray-400 text-sm font-light leading-relaxed mb-4 flex-grow">
+                  <p className="text-muted text-sm font-light leading-relaxed mb-4 flex-grow">
                     {language === 'en' ? robot.descEn : robot.descFr}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {(language === 'en' ? robot.featuresEn : robot.featuresFr).map((feature) => (
                       <span
                         key={feature}
-                        className="text-[8px] font-mono px-2 py-1 bg-white/5 text-gray-500 uppercase tracking-widest"
+                        className="text-[8px] font-mono px-2 py-1 bg-card text-muted-fg uppercase tracking-widest"
                       >
                         {feature}
                       </span>
@@ -162,19 +162,19 @@ export const RobotsPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <GlassCard className="p-8 lg:p-12 border-cyan/20 bg-gradient-to-br from-cyan/5 to-transparent group">
+          <GlassCard className="p-8 lg:p-12 border-accent/20 bg-gradient-to-br from-accent/5 to-transparent group">
             <div className="flex flex-col lg:flex-row gap-8 items-center">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 bg-cyan/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <Cpu size={40} className="text-cyan" />
+                <div className="w-20 h-20 bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <Cpu size={40} className="text-accent" />
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-3xl font-extrabold text-white mb-2 uppercase tracking-tighter">ZBOS Platform</h3>
-                <p className="text-cyan font-mono text-xs uppercase tracking-widest mb-4">
+                <h3 className="text-3xl font-extrabold text-foreground mb-2 uppercase tracking-tighter">ZBOS Platform</h3>
+                <p className="text-accent font-mono text-xs uppercase tracking-widest mb-4">
                   {language === 'en' ? 'The Brain Behind the Bots' : 'Le Cerveau Derrière les Robots'}
                 </p>
-                <p className="text-gray-400 text-base font-light mb-6">
+                <p className="text-muted text-base font-light mb-6">
                   {language === 'en'
                     ? 'ZBOS is the proprietary operating system developed by Zorarobotics Belgium that powers all robots in our catalog. It is the first software platform capable of giving life to any smart device.'
                     : 'ZBOS est le système d\'exploitation propriétaire développé par Zorarobotics Belgique qui alimente tous les robots de notre catalogue. C\'est la première plateforme logicielle capable de donner vie à n\'importe quel appareil intelligent.'}
@@ -185,9 +185,9 @@ export const RobotsPage = () => {
                     { icon: Globe, en: 'Virtual & VR', fr: 'Virtuel & VR' },
                     { icon: Code, en: 'No-Code Interface', fr: 'Interface No-Code' },
                   ].map((item) => (
-                    <div key={item.en} className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 hover:border-cyan/30 transition-all duration-300 border border-transparent">
-                      <item.icon size={20} className="text-cyan flex-shrink-0 group-hover:scale-110 transition-transform duration-500" />
-                      <span className="text-[10px] font-mono text-gray-300 uppercase tracking-widest">
+                    <div key={item.en} className="flex items-center gap-3 p-4 bg-card hover:bg-accent/10 hover:border-accent/30 transition-all duration-300 border border-transparent">
+                      <item.icon size={20} className="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-500" />
+                      <span className="text-[10px] font-mono text-muted uppercase tracking-widest">
                         {language === 'en' ? item.en : item.fr}
                       </span>
                     </div>

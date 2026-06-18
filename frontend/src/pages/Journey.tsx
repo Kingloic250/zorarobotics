@@ -24,13 +24,13 @@ export const JourneyPage = () => {
           viewport={{ once: true }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'Our Journey // 02' : 'Notre Parcours // 02'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Our Journey' : 'Notre Parcours'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'From our founding to today — tracking the milestones that define Zorarobotics Africa.'
               : 'De notre fondation à aujourd\'hui les étapes qui définissent Zorarobotics Africa.'}
@@ -38,7 +38,7 @@ export const JourneyPage = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-px bg-white/5 hidden md:block" />
+          <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-px border-border hidden md:block" />
           <div className="space-y-12">
             {timeline.map((item, i) => (
               <motion.div
@@ -50,15 +50,15 @@ export const JourneyPage = () => {
                 className={`relative flex flex-col md:flex-row items-start gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
               >
                 <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : ''}`}>
-                  <GlassCard className="p-6 group hover:border-cyan/30 transition-all duration-500">
-                    <span className="text-cyan font-mono text-sm font-bold block mb-2">{item.year}</span>
-                    <p className="text-gray-400 text-sm font-light leading-relaxed">
+                  <GlassCard className="p-6 group hover:border-accent/30 transition-all duration-500">
+                    <span className="text-accent font-mono text-sm font-bold block mb-2">{item.year}</span>
+                    <p className="text-muted text-sm font-light leading-relaxed">
                       {language === 'en' ? item.en : item.fr}
                     </p>
                   </GlassCard>
                 </div>
-                <div className="hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-cyan/10 border border-cyan/30 flex-shrink-0 relative z-10">
-                  <div className="w-2 h-2 rounded-full bg-cyan" />
+                <div className="hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-accent/10 border border-accent/30 flex-shrink-0 relative z-10">
+                  <div className="w-2 h-2 rounded-full bg-accent" />
                 </div>
                 <div className="flex-1" />
               </motion.div>

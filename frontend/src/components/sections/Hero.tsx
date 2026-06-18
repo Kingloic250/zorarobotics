@@ -26,7 +26,7 @@ const CountUp = ({ end, suffix = '' }: { end: number; suffix?: string }) => {
     }
   }, [inView, end, suffix, started]);
 
-  return <span ref={ref} className="text-3xl font-bold text-white block">0{suffix}</span>;
+  return <span ref={ref} className="text-3xl font-bold text-foreground block">0{suffix}</span>;
 };
 
 export const Hero = () => {
@@ -80,9 +80,9 @@ export const Hero = () => {
         >
           <source src="/videos/adibot-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#05070A] via-black/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#05070A]/90 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-transparent to-transparent" />
         <div className="absolute inset-0 cyber-grid opacity-10 pointer-events-none" />
       </div>
 
@@ -95,19 +95,19 @@ export const Hero = () => {
             className="w-full lg:w-3/5"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="w-12 h-[1px] bg-cyan" />
-              <span className="text-cyan font-mono text-[10px] uppercase tracking-[0.3em] font-medium">
+              <span className="w-12 h-[1px] bg-accent" />
+              <span className="text-accent font-mono text-[10px] uppercase tracking-[0.3em] font-medium">
                 {c.badge}
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[0.95] tracking-tight text-white">
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[0.95] tracking-tight text-foreground">
               {c.headline1} <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-white via-cyan to-[#007075] italic inline-block" style={{ backgroundSize: '120% 100%', backgroundPosition: '50% 0' }}>{c.headlineSpan}</span>
               <br /> {c.headline2}
             </h1>
 
-            <p className="text-base md:text-lg text-gray-400 mb-12 max-w-2xl leading-relaxed font-light">
+            <p className="text-base md:text-lg text-muted mb-12 max-w-2xl leading-relaxed font-light">
               {c.description}
             </p>
 
@@ -119,25 +119,25 @@ export const Hero = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="px-10 border-white/20 text-white hover:bg-white/5 uppercase text-sm tracking-widest font-bold">
+                <Button variant="outline" size="lg" className="px-10 border-border text-foreground hover:bg-card uppercase text-sm tracking-widest font-bold">
                   {c.cta2}
                 </Button>
               </Link>
             </div>
 
-            <div className="mt-16 hidden lg:flex justify-between items-end border-t border-white/5 pt-8">
+            <div className="mt-16 hidden lg:flex justify-between items-end border-t border-border pt-8">
               <div className="grid grid-cols-3 gap-16">
                 <div className="space-y-1">
-                  <span className="text-3xl font-bold text-white block">2019</span>
-                  <span className="text-[10px] uppercase tracking-widest text-cyan font-mono">{language === 'en' ? 'Founded in Rwanda' : 'Fond\u00e9 au Rwanda'}</span>
+                  <span className="text-3xl font-bold text-foreground block">2019</span>
+                  <span className="text-[10px] uppercase tracking-widest text-accent font-mono">{language === 'en' ? 'Founded in Rwanda' : 'Fond\u00e9 au Rwanda'}</span>
                 </div>
                 <div className="space-y-1">
                   <CountUp end={8} suffix="+" />
-                  <span className="text-[10px] uppercase tracking-widest text-cyan font-mono">{language === 'en' ? 'Robot Models' : 'Mod\u00e8les de Robots'}</span>
+                  <span className="text-[10px] uppercase tracking-widest text-accent font-mono">{language === 'en' ? 'Robot Models' : 'Mod\u00e8les de Robots'}</span>
                 </div>
                 <div className="space-y-1">
                   <CountUp end={5} suffix="+" />
-                  <span className="text-[10px] uppercase tracking-widest text-cyan font-mono">{language === 'en' ? 'Countries Reached' : 'Pays Atteints'}</span>
+                  <span className="text-[10px] uppercase tracking-widest text-accent font-mono">{language === 'en' ? 'Countries Reached' : 'Pays Atteints'}</span>
                 </div>
               </div>
             </div>
@@ -160,8 +160,8 @@ export const Hero = () => {
               transition={{ repeat: Infinity, duration: 2 }}
               className="flex flex-col items-center gap-2"
             >
-              <span className="text-[10px] text-white/40 uppercase tracking-widest font-bold">{c.scroll}</span>
-              <ChevronDown className="text-cyan w-5 h-5" />
+              <span className="text-[10px] text-muted-fg uppercase tracking-widest font-bold">{c.scroll}</span>
+              <ChevronDown className="text-accent w-5 h-5" />
             </motion.div>
           </div>
         </motion.div>

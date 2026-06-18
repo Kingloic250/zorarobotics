@@ -116,7 +116,7 @@ export const Solutions = () => {
 
   return (
     <section id="solutions" className="py-24 relative overflow-hidden">
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-cyan/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -125,13 +125,13 @@ export const Solutions = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+            <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
               Sectors // 02
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
               {language === 'en' ? 'Sectors We Transform' : 'Secteurs Que Nous Transformons'}
             </h2>
-            <p className="text-gray-400 text-lg font-light">
+            <p className="text-muted text-lg font-light">
               {language === 'en'
                 ? 'From education to healthcare, our robots are deployed across multiple sectors.'
                 : 'De l\'éducation à la santé, nos robots sont déployés dans de multiples secteurs.'}
@@ -149,27 +149,27 @@ export const Solutions = () => {
               transition={{ delay: index * 0.1 }}
             >
               <GlassCard className="h-full group">
-                <div className="w-14 h-14 bg-white/5 flex items-center justify-center mb-6 group-hover:bg-cyan group-hover:text-black transition-colors duration-300">
+                <div className="w-14 h-14 bg-card flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-colors duration-300">
                   <item.icon size={28} />
                 </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-cyan transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
                   {language === 'en' ? item.titleEn : item.titleFr}
                 </h3>
-                <p className="text-gray-400 text-sm font-light mb-4">
+                <p className="text-muted text-sm font-light mb-4">
                   {language === 'en' ? item.descEn : item.descFr}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {(language === 'en' ? item.detailsEn : item.detailsFr).map((detail, i) => (
-                    <li key={i} className="text-[10px] font-mono text-gray-500 flex items-start gap-2">
-                      <span className="text-cyan mt-0.5">▸</span>
+                    <li key={i} className="text-[10px] font-mono text-muted-fg flex items-start gap-2">
+                      <span className="text-accent mt-0.5">▸</span>
                       {detail}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto pt-4 border-t border-white/5">
-                  <span className="text-[8px] font-mono text-gray-600 uppercase tracking-widest">
+                <div className="mt-auto pt-4 border-t border-border">
+                  <span className="text-[8px] font-mono text-muted-fg uppercase tracking-widest">
                     {language === 'en' ? 'Target: ' : 'Cible : '}
-                    <span className="text-gray-400">{language === 'en' ? item.targetEn : item.targetFr}</span>
+                    <span className="text-muted">{language === 'en' ? item.targetEn : item.targetFr}</span>
                   </span>
                 </div>
               </GlassCard>

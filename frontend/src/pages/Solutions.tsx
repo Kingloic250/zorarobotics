@@ -120,7 +120,7 @@ export const SolutionsPage = () => {
 
   return (
     <section className="py-32 relative overflow-hidden">
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">
         <motion.div
@@ -129,13 +129,13 @@ export const SolutionsPage = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'Our Solutions // 02' : 'Nos Solutions // 02'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Sectors We Transform' : 'Secteurs Que Nous Transformons'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'From education to healthcare, our robots are deployed across multiple sectors in Africa.'
               : 'De l\'éducation à la santé, nos robots sont déployés dans de multiples secteurs en Afrique.'}
@@ -154,31 +154,31 @@ export const SolutionsPage = () => {
               <GlassCard className="p-8 lg:p-12 group">
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                      <sector.icon size={32} className="text-cyan" />
+                    <div className="w-16 h-16 bg-card flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                      <sector.icon size={32} className="text-accent" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2 uppercase tracking-wider">
+                    <h3 className="text-2xl font-bold text-foreground mb-2 uppercase tracking-wider">
                       {language === 'en' ? sector.titleEn : sector.titleFr}
                     </h3>
-                    <p className="text-gray-400 text-base font-light mb-6">
+                    <p className="text-muted text-base font-light mb-6">
                       {language === 'en' ? sector.descEn : sector.descFr}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                       {(language === 'en' ? sector.detailsEn : sector.detailsFr).map((detail, i) => (
                         <div key={i} className="flex items-start gap-3">
-                          <span className="w-1.5 h-1.5 bg-cyan rounded-full mt-1.5 flex-shrink-0" />
-                          <span className="text-xs text-gray-400 font-mono uppercase tracking-tight leading-relaxed">
+                          <span className="text-accent mt-0.5 flex-shrink-0">▸</span>
+                          <span className="text-xs text-muted font-mono uppercase tracking-tight leading-relaxed">
                             {detail}
                           </span>
                         </div>
                       ))}
                     </div>
-                    <div className="pt-4 border-t border-white/5">
-                      <span className="text-[9px] font-mono text-gray-600 uppercase tracking-widest">
+                    <div className="pt-4 border-t border-border">
+                      <span className="text-[9px] font-mono text-muted-fg uppercase tracking-widest">
                         {language === 'en' ? 'Target Audience: ' : 'Public Cible : '}
-                        <span className="text-cyan">{language === 'en' ? sector.targetEn : sector.targetFr}</span>
+                        <span className="text-accent">{language === 'en' ? sector.targetEn : sector.targetFr}</span>
                       </span>
                     </div>
                   </div>

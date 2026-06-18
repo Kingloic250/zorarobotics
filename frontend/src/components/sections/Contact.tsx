@@ -94,49 +94,49 @@ export const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+            <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
               {c.badge}
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight italic">
               {c.title1} <br />
               <span className="text-gradient uppercase tracking-tighter">{c.title2}</span>
             </h2>
-            <p className="text-gray-400 text-lg font-light mb-12 leading-relaxed max-w-md">
+            <p className="text-muted text-lg font-light mb-12 leading-relaxed max-w-md">
               {c.description}
             </p>
 
             <div className="space-y-8">
               <div className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:border-cyan group-hover:text-cyan transition-all">
+                <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-all">
                   <Mail size={18} />
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">{c.emailLabel}</p>
-                  <a href="mailto:Zorarobotics@gmail.com" className="text-lg font-medium text-white hover:text-cyan transition-colors">{c.email}</a>
+                  <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">{c.emailLabel}</p>
+                  <a href="mailto:Zorarobotics@gmail.com" className="text-lg font-medium text-foreground hover:text-accent transition-colors">{c.email}</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:border-cyan group-hover:text-cyan transition-all">
+                <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-all">
                   <Phone size={18} />
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">{c.phoneLabel}</p>
-                  <a href="tel:+250788303027" className="text-lg font-medium text-white hover:text-cyan transition-colors">{c.phone}</a>
+                  <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">{c.phoneLabel}</p>
+                  <a href="tel:+250788303027" className="text-lg font-medium text-foreground hover:text-accent transition-colors">{c.phone}</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6 group">
-                <div className="w-12 h-12 border border-white/10 flex items-center justify-center group-hover:border-cyan group-hover:text-cyan transition-all">
+                <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-all">
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-1">{c.addressLabel}</p>
-                  <p className="text-lg font-medium text-white">{c.address}</p>
+                  <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">{c.addressLabel}</p>
+                  <p className="text-lg font-medium text-foreground">{c.address}</p>
                 </div>
               </div>
 
-              <div className="rounded-sm overflow-hidden border border-white/10 w-full" style={{ height: 280 }}>
+              <div className="rounded-sm overflow-hidden border border-border w-full" style={{ height: 280 }}>
                 <iframe
                   src="https://maps.google.com/maps?q=KG+8+Avenue+31+Kigali+Rwanda&output=embed&z=15"
                   width="100%"
@@ -155,7 +155,7 @@ export const ContactSection = () => {
                 { icon: Instagram, url: 'https://www.instagram.com/zorabots_africa/' },
                 { icon: Youtube, url: 'https://www.youtube.com/channel/UC6FWjluEyNztGFmWrlEzQcw' },
               ].map((item, i) => (
-                <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-cyan hover:text-cyan transition-all">
+                <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-all">
                   <item.icon size={16} />
                 </a>
               ))}
@@ -166,53 +166,53 @@ export const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-8 lg:p-12 glass-panel shadow-2xl relative rounded-sm border-white/5"
+            className="p-8 lg:p-12 glass-panel shadow-2xl relative rounded-sm border-border"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono uppercase tracking-widest text-cyan font-bold ml-1">{c.formName}</label>
+                  <label className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold ml-1">{c.formName}</label>
                   <input
                     type="text" name="name" value={formData.name} onChange={handleChange} required
                     placeholder={language === 'en' ? 'Your Name' : 'Votre Nom'}
-                    className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-cyan/50 focus:bg-white/[0.08] transition-all font-mono text-xs"
+                    className="w-full px-6 py-4 bg-card border border-border text-foreground placeholder:text-foreground/20 focus:outline-none focus:border-accent/50 focus:bg-accent/10 transition-all font-mono text-xs"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono uppercase tracking-widest text-cyan font-bold ml-1">{c.formEmail}</label>
+                  <label className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold ml-1">{c.formEmail}</label>
                   <input
                     type="email" name="email" value={formData.email} onChange={handleChange} required
                     placeholder={language === 'en' ? 'your@email.com' : 'votre@email.com'}
-                    className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-cyan/50 focus:bg-white/[0.08] transition-all font-mono text-xs"
+                    className="w-full px-6 py-4 bg-card border border-border text-foreground placeholder:text-foreground/20 focus:outline-none focus:border-accent/50 focus:bg-accent/10 transition-all font-mono text-xs"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-mono uppercase tracking-widest text-cyan font-bold ml-1">{c.formOrg}</label>
+                <label className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold ml-1">{c.formOrg}</label>
                 <input
                   type="text" name="organization" value={formData.organization} onChange={handleChange}
                   placeholder={language === 'en' ? 'Your Organization' : 'Votre Organisation'}
-                  className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-cyan/50 focus:bg-white/[0.08] transition-all font-mono text-xs"
+                  className="w-full px-6 py-4 bg-card border border-border text-foreground placeholder:text-foreground/20 focus:outline-none focus:border-accent/50 focus:bg-accent/10 transition-all font-mono text-xs"
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-mono uppercase tracking-widest text-cyan font-bold ml-1">{c.formSector}</label>
-                <select name="sector" value={formData.sector} onChange={handleChange} className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white focus:outline-none focus:border-cyan/50 focus:bg-white/[0.08] transition-all appearance-none cursor-pointer font-mono text-xs">
-                  <option value="" className="bg-deep-bg">--</option>
+                <label className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold ml-1">{c.formSector}</label>
+                <select name="sector" value={formData.sector} onChange={handleChange} className="w-full px-6 py-4 bg-card border border-border text-foreground focus:outline-none focus:border-accent/50 focus:bg-accent/10 transition-all appearance-none cursor-pointer font-mono text-xs">
+                  <option value="" className="bg-background">--</option>
                   {c.sectors.map((sector) => (
-                    <option key={sector} value={sector} className="bg-deep-bg">{sector}</option>
+                    <option key={sector} value={sector} className="bg-background">{sector}</option>
                   ))}
                 </select>
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-mono uppercase tracking-widest text-cyan font-bold ml-1">{c.formMessage}</label>
+                <label className="text-[10px] font-mono uppercase tracking-widest text-accent font-bold ml-1">{c.formMessage}</label>
                 <textarea
                   name="message" value={formData.message} onChange={handleChange} required rows={4}
                   placeholder={language === 'en' ? 'Tell us about your project...' : 'Parlez-nous de votre projet...'}
-                  className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white placeholder:text-white/20 focus:outline-none focus:border-cyan/50 focus:bg-white/[0.08] transition-all resize-none font-mono text-xs"
+                  className="w-full px-6 py-4 bg-card border border-border text-foreground placeholder:text-foreground/20 focus:outline-none focus:border-accent/50 focus:bg-accent/10 transition-all resize-none font-mono text-xs"
                 />
               </div>
 

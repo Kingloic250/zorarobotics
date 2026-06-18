@@ -8,7 +8,7 @@ export const PartnershipsPage = () => {
 
   return (
     <section className="py-32 relative overflow-hidden">
-      <div className="absolute right-0 top-0 w-1/3 h-full bg-linear-to-l from-cyan/5 to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 w-1/3 h-full bg-linear-to-l from-accent/5 to-transparent pointer-events-none" />
 
       <div className="container px-6 mx-auto relative z-10">
         <motion.div
@@ -17,13 +17,13 @@ export const PartnershipsPage = () => {
           viewport={{ once: true }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'Partnerships // 05' : 'Partenariats // 05'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Our Partners & Impact' : 'Nos Partenaires & Impact'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'Collaborating with governments, international organizations, and private sector leaders to drive Africa\'s robotics revolution.'
               : 'Collaborant avec les gouvernements, les organisations internationales et les leaders du secteur privé pour conduire la révolution robotique en Afrique.'}
@@ -33,8 +33,8 @@ export const PartnershipsPage = () => {
         {/* Government Partners */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-10">
-            <Building size={24} className="text-cyan" />
-            <h3 className="text-2xl font-bold text-white uppercase tracking-wider">
+            <Building size={24} className="text-accent" />
+            <h3 className="text-2xl font-bold text-foreground uppercase tracking-wider">
               {language === 'en' ? 'Government Partners' : 'Partenaires Gouvernementaux'}
             </h3>
           </div>
@@ -47,7 +47,7 @@ export const PartnershipsPage = () => {
             ].map((partner) => (
               <div key={partner.en}>
                 <GlassCard className="text-center py-8 group">
-                  <h4 className="text-sm font-bold text-white uppercase tracking-wider">
+                  <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
                 </GlassCard>
@@ -59,8 +59,8 @@ export const PartnershipsPage = () => {
         {/* International Partners */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-10">
-            <Globe size={24} className="text-cyan" />
-            <h3 className="text-2xl font-bold text-white uppercase tracking-wider">
+            <Globe size={24} className="text-accent" />
+            <h3 className="text-2xl font-bold text-foreground uppercase tracking-wider">
               {language === 'en' ? 'International Partners' : 'Partenaires Internationaux'}
             </h3>
           </div>
@@ -72,7 +72,7 @@ export const PartnershipsPage = () => {
             ].map((partner) => (
               <div key={partner.en}>
                 <GlassCard className="text-center py-8 group">
-                  <h4 className="text-sm font-bold text-white uppercase tracking-wider">
+                  <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
                 </GlassCard>
@@ -84,8 +84,8 @@ export const PartnershipsPage = () => {
         {/* Private & Academic */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-10">
-            <Handshake size={24} className="text-cyan" />
-            <h3 className="text-2xl font-bold text-white uppercase tracking-wider">
+            <Handshake size={24} className="text-accent" />
+            <h3 className="text-2xl font-bold text-foreground uppercase tracking-wider">
               {language === 'en' ? 'Private & Academic Partners' : 'Partenaires Privés & Académiques'}
             </h3>
           </div>
@@ -98,7 +98,7 @@ export const PartnershipsPage = () => {
             ].map((partner) => (
               <div key={partner.en}>
                 <GlassCard className="text-center py-8 group">
-                  <h4 className="text-sm font-bold text-white uppercase tracking-wider">
+                  <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
                 </GlassCard>
@@ -110,8 +110,8 @@ export const PartnershipsPage = () => {
         {/* Impact Stories */}
         <div>
           <div className="flex items-center gap-4 mb-10">
-            <Shield size={24} className="text-cyan" />
-            <h3 className="text-2xl font-bold text-white uppercase tracking-wider">
+            <Shield size={24} className="text-accent" />
+            <h3 className="text-2xl font-bold text-foreground uppercase tracking-wider">
               {language === 'en' ? 'Key Impact Stories' : 'Histoires d\'Impact'}
             </h3>
           </div>
@@ -162,14 +162,14 @@ export const PartnershipsPage = () => {
               >
                 <GlassCard className="h-full group">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-                      <story.icon size={24} className="text-cyan" />
+                    <div className="w-12 h-12 bg-card flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                      <story.icon size={24} className="text-accent" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-white mb-2 uppercase tracking-wider">
+                      <h4 className="text-lg font-bold text-foreground mb-2 uppercase tracking-wider">
                         {language === 'en' ? story.titleEn : story.titleFr}
                       </h4>
-                      <p className="text-gray-400 text-sm font-light leading-relaxed">
+                      <p className="text-muted text-sm font-light leading-relaxed">
                         {language === 'en' ? story.descEn : story.descFr}
                       </p>
                     </div>

@@ -43,13 +43,13 @@ export const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+              <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
                 {language === 'en' ? 'Our Sectors // 02' : 'Nos Secteurs // 02'}
               </span>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
                 {language === 'en' ? 'Sectors We Transform' : 'Secteurs Que Nous Transformons'}
               </h2>
-              <p className="text-gray-400 text-lg font-light">
+              <p className="text-muted text-lg font-light">
                 {language === 'en'
                   ? 'Deploying advanced robotics across key industries in Africa.'
                   : 'Déploiement de la robotique avancée dans les industries clés en Afrique.'}
@@ -68,8 +68,8 @@ export const Home = () => {
               >
                 <Link to={sector.to}>
                   <GlassCard className="text-center py-10 h-full group cursor-pointer">
-                    <sector.icon size={32} className="mx-auto mb-4 text-cyan group-hover:scale-110 transition-transform" />
-                    <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+                    <sector.icon size={32} className="mx-auto mb-4 text-accent group-hover:scale-110 transition-transform" />
+                    <h3 className="text-sm font-bold text-foreground uppercase tracking-wider">
                       {language === 'en' ? sector.nameEn : sector.nameFr}
                     </h3>
                   </GlassCard>
@@ -90,7 +90,7 @@ export const Home = () => {
       </section>
 
       {/* Featured Robots */}
-      <section className="py-24 bg-white/[0.02]">
+      <section className="py-24 bg-card">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
             <motion.div
@@ -99,13 +99,13 @@ export const Home = () => {
               viewport={{ once: true }}
               className="max-w-2xl"
             >
-              <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+              <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
                 {language === 'en' ? 'Featured Robots // 03' : 'Robots Vedettes // 03'}
               </span>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4 uppercase tracking-tighter">
                 {language === 'en' ? 'Our Robot Fleet' : 'Notre Flotte de Robots'}
               </h2>
-              <p className="text-gray-500 text-lg font-light uppercase tracking-[0.1em]">
+              <p className="text-muted-fg text-lg font-light uppercase tracking-[0.1em]">
                 {language === 'en' ? 'Discover our range of advanced humanoid and service robots.' : 'Découvrez notre gamme de robots humanoïdes et de service avancés.'}
               </p>
             </motion.div>
@@ -125,7 +125,7 @@ export const Home = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
               >
-                <GlassCard className="p-0 overflow-hidden group hover:border-cyan/30 transition-all duration-500 bg-black/40">
+                <GlassCard className="p-0 overflow-hidden group hover:border-accent/30 transition-all duration-500 bg-card">
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={robot.image}
@@ -135,8 +135,8 @@ export const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold tracking-tight mb-1 uppercase text-white">{robot.name}</h3>
-                    <p className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">
+                    <h3 className="text-xl font-bold tracking-tight mb-1 uppercase text-foreground">{robot.name}</h3>
+                    <p className="text-[10px] font-mono text-muted-fg uppercase tracking-widest">
                       {language === 'en' ? robot.sectorEn : robot.sectorFr}
                     </p>
                   </div>
@@ -148,9 +148,9 @@ export const Home = () => {
       </section>
 
       {/* Partners Marquee */}
-      <section className="py-16 border-y border-white/5 overflow-hidden">
+      <section className="py-16 border-y border-border overflow-hidden">
         <div className="text-center mb-10">
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold">
             {language === 'en' ? 'Trusted By // 04' : 'Approuvé Par // 04'}
           </span>
         </div>

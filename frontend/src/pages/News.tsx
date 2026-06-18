@@ -102,7 +102,7 @@ const socialChannels = [
     followers: '~449 followers',
     url: 'https://x.com/zorabots',
     icon: XIcon,
-    color: 'hover:text-white',
+    color: 'hover:text-foreground',
     contentEn: 'News, event participation, tech announcements',
     contentFr: 'Actualités, participation aux événements, annonces tech',
   },
@@ -150,13 +150,13 @@ export const NewsPage = () => {
           viewport={{ once: true }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'News & Media // 06' : 'Actualités & Médias // 06'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Press & Media' : 'Presse & Médias'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'Zorarobotics Africa in the news. Press coverage, media mentions, and social media channels.'
               : 'Zorarobotics Africa dans l\'actualité. Couverture presse, mentions médias et réseaux sociaux.'}
@@ -165,7 +165,7 @@ export const NewsPage = () => {
 
         {/* Press Mentions */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-white mb-10 uppercase tracking-wider">
+          <h3 className="text-2xl font-bold text-foreground mb-10 uppercase tracking-wider">
             {language === 'en' ? 'Press Coverage' : 'Couverture Presse'}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -182,21 +182,21 @@ export const NewsPage = () => {
                     {item.image && (
                       <div className="relative h-36 overflow-hidden">
                         <img src={item.image} alt={item.outlet} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent" />
                       </div>
                     )}
                     <div className={item.image ? 'p-5' : 'p-6'}>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-mono text-cyan uppercase tracking-widest font-bold">{item.outlet}</span>
-                      <span className="text-[9px] font-mono text-gray-600">{item.year}</span>
+                      <span className="text-[10px] font-mono text-accent uppercase tracking-widest font-bold">{item.outlet}</span>
+                      <span className="text-[9px] font-mono text-muted-fg">{item.year}</span>
                     </div>
-                    <p className="text-sm text-white font-medium mb-2 group-hover:text-cyan transition-colors">
+                    <p className="text-sm text-foreground font-medium mb-2 group-hover:text-accent transition-colors">
                       {language === 'en' ? item.titleEn : item.titleFr}
                     </p>
-                    <p className="text-[11px] text-gray-500 font-light mb-4 leading-relaxed">
+                    <p className="text-[11px] text-muted-fg font-light mb-4 leading-relaxed">
                       {language === 'en' ? item.descEn : item.descFr}
                     </p>
-                    <div className="flex items-center gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-widest">
+                    <div className="flex items-center gap-2 text-[10px] font-mono text-muted-fg uppercase tracking-widest">
                       {language === 'en' ? 'Read More' : 'Lire Plus'}
                       <ExternalLink size={10} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                     </div>
@@ -210,7 +210,7 @@ export const NewsPage = () => {
 
         {/* Social Media */}
         <div>
-          <h3 className="text-2xl font-bold text-white mb-10 uppercase tracking-wider">
+          <h3 className="text-2xl font-bold text-foreground mb-10 uppercase tracking-wider">
             {language === 'en' ? 'Follow Us' : 'Suivez-Nous'}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -225,16 +225,16 @@ export const NewsPage = () => {
                 <a href={channel.url} target="_blank" rel="noopener noreferrer" className="block h-full">
                   <GlassCard className={`h-full group cursor-pointer ${channel.color}`}>
                     <div className="flex items-center gap-4 mb-4">
-                      <channel.icon size={24} className="text-gray-400 group-hover:text-current transition-colors" />
+                      <channel.icon size={24} className="text-muted group-hover:text-current transition-colors" />
                       <div>
-                        <h4 className="text-sm font-bold text-white">{channel.name}</h4>
-                        <p className="text-[10px] font-mono text-gray-500">{channel.handle}</p>
+                        <h4 className="text-sm font-bold text-foreground">{channel.name}</h4>
+                        <p className="text-[10px] font-mono text-muted-fg">{channel.handle}</p>
                       </div>
                     </div>
-                    <p className="text-xs text-gray-400 font-light mb-3">
+                    <p className="text-xs text-muted font-light mb-3">
                       {language === 'en' ? channel.contentEn : channel.contentFr}
                     </p>
-                    <p className="text-[9px] font-mono text-cyan uppercase tracking-widest">{channel.followers}</p>
+                    <p className="text-[9px] font-mono text-accent uppercase tracking-widest">{channel.followers}</p>
                   </GlassCard>
                 </a>
               </motion.div>

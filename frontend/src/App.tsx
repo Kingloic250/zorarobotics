@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { type ReactNode, useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
@@ -22,7 +23,7 @@ function ScrollToTop() {
 
 function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className="relative min-h-screen bg-deep-bg selection:bg-cyan selection:text-black">
+    <div className="relative min-h-screen bg-background selection:bg-accent selection:text-black">
       <div className="scanline z-50 pointer-events-none" />
       <Navbar />
       <main>{children}</main>
@@ -30,8 +31,8 @@ function Layout({ children }: { children: ReactNode }) {
 
       <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full cyber-grid opacity-[0.03]" />
-        <div className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] bg-cyan/5 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] bg-cyan/5 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] bg-accent/5 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] bg-accent/5 rounded-full blur-[120px] animate-pulse" />
       </div>
     </div>
   );
@@ -39,8 +40,9 @@ function Layout({ children }: { children: ReactNode }) {
 
 export default function App() {
   return (
-    <LanguageProvider>
-      <BrowserRouter>
+    <ThemeProvider>
+      <LanguageProvider>
+        <BrowserRouter>
         <ScrollToTop />
         <Layout>
           <Routes>
@@ -57,6 +59,7 @@ export default function App() {
           </Routes>
         </Layout>
       </BrowserRouter>
-    </LanguageProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }

@@ -52,7 +52,7 @@ export const WhyZorarobotics = () => {
 
   return (
     <section id="why-zorabots" className="py-24 relative overflow-hidden">
-      <div className="absolute right-0 top-0 w-1/3 h-full bg-linear-to-l from-cyan/5 to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 w-1/3 h-full bg-linear-to-l from-accent/5 to-transparent pointer-events-none" />
 
       <div className="container px-6 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -61,13 +61,13 @@ export const WhyZorarobotics = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+            <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
               Why Zorarobotics // 06
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
               {language === 'en' ? 'Why Zorarobotics Africa' : 'Pourquoi Zorarobotics Africa'}
             </h2>
-            <p className="text-gray-400 text-lg font-light">
+            <p className="text-muted text-lg font-light">
               {language === 'en'
                 ? 'What sets us apart in Africa\'s emerging robotics landscape.'
                 : 'Ce qui nous distingue dans le paysage émergent de la robotique en Afrique.'}
@@ -85,10 +85,10 @@ export const WhyZorarobotics = () => {
               transition={{ delay: i * 0.1 }}
             >
               <GlassCard className="h-full text-center">
-                <h3 className="text-lg font-bold mb-3 text-white uppercase tracking-wider">
+                <h3 className="text-lg font-bold mb-3 text-foreground uppercase tracking-wider">
                   {language === 'en' ? item.titleEn : item.titleFr}
                 </h3>
-                <p className="text-sm text-gray-400 font-light leading-relaxed">
+                <p className="text-sm text-muted font-light leading-relaxed">
                   {language === 'en' ? item.descEn : item.descFr}
                 </p>
               </GlassCard>

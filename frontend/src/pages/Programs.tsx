@@ -23,13 +23,13 @@ export const ProgramsPage = () => {
           viewport={{ once: true }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-cyan font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+          <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
             {language === 'en' ? 'Our Programs // 03' : 'Nos Programmes // 03'}
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
             {language === 'en' ? 'Our Programs' : 'Nos Programmes'}
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted text-lg font-light">
             {language === 'en'
               ? 'Zorarobotics Africa delivers tailored robotics and AI programs across key sectors.'
               : 'Zorarobotics Africa propose des programmes de robotique et d\'IA adaptés aux secteurs clés.'}
@@ -45,12 +45,12 @@ export const ProgramsPage = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <GlassCard className="h-full p-8 group hover:border-cyan/30 transition-all duration-500">
-                <p.icon size={32} className="text-cyan mb-6 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-bold text-white mb-3 uppercase tracking-wider">
+              <GlassCard className="h-full p-8 group hover:border-accent/30 transition-all duration-500">
+                <p.icon size={32} className="text-accent mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-lg font-bold text-foreground mb-3 uppercase tracking-wider">
                   {language === 'en' ? p.titleEn : p.titleFr}
                 </h3>
-                <p className="text-gray-400 text-sm font-light leading-relaxed">
+                <p className="text-muted text-sm font-light leading-relaxed">
                   {language === 'en' ? p.descEn : p.descFr}
                 </p>
               </GlassCard>

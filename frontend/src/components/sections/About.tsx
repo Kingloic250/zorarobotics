@@ -63,7 +63,7 @@ export const About = () => {
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      <div className="absolute left-0 bottom-0 w-full h-1/2 bg-linear-to-t from-cyan/5 to-transparent pointer-events-none" />
+      <div className="absolute left-0 bottom-0 w-full h-1/2 bg-linear-to-t from-accent/5 to-transparent pointer-events-none" />
 
       <div className="container px-6 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
@@ -72,15 +72,15 @@ export const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-cyan font-mono text-[10px] uppercase tracking-[0.3em] font-medium mb-4 block">
+            <span className="text-accent font-mono text-[10px] uppercase tracking-[0.3em] font-medium mb-4 block">
               {c.badge}
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-4 italic uppercase leading-[1.1]">
               {c.title1} <br />
               <span className="text-gradient">{c.titleSpan}</span>
             </h2>
-            <p className="text-lg text-cyan font-mono mb-6 italic">"{c.subtitle}"</p>
-            <div className="space-y-6 text-gray-400 font-light leading-relaxed text-lg">
+            <p className="text-lg text-accent font-mono mb-6 italic">"{c.subtitle}"</p>
+            <div className="space-y-6 text-muted font-light leading-relaxed text-lg">
               <p>{c.tagline}</p>
               <p>{c.desc1}</p>
               <p>{c.desc2}</p>
@@ -97,11 +97,11 @@ export const About = () => {
                 transition={{ delay: i * 0.1 }}
               >
                 <GlassCard className="h-full py-10 text-center group">
-                  <div className="w-12 h-12 bg-white/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                    <value.icon className="text-cyan" size={24} />
+                  <div className="w-12 h-12 bg-card flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <value.icon className="text-accent" size={24} />
                   </div>
-                  <h4 className="text-lg font-bold mb-3 uppercase tracking-wider text-white">{value.title}</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed font-mono uppercase tracking-tighter">{value.desc}</p>
+                  <h4 className="text-lg font-bold mb-3 uppercase tracking-wider text-foreground">{value.title}</h4>
+                  <p className="text-xs text-muted-fg leading-relaxed font-mono uppercase tracking-tighter">{value.desc}</p>
                 </GlassCard>
               </motion.div>
             ))}
@@ -111,30 +111,30 @@ export const About = () => {
         {/* Leadership */}
         <motion.div
           whileHover={{ y: -4, borderColor: 'rgba(0, 242, 255, 0.3)' }}
-          className="mb-20 p-8 glass-panel border-cyan/10 hover:bg-white/5 transition-all duration-300 group"
+          className="mb-20 p-8 glass-panel border-accent/10 hover:bg-card transition-all duration-300 group"
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-24 h-24 rounded-full bg-cyan/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-              <span className="text-3xl font-bold text-cyan">BK</span>
+            <div className="w-24 h-24 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+              <span className="text-3xl font-bold text-accent">BK</span>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-white mb-1">{c.leadershipName}</h3>
-              <p className="text-cyan font-mono text-xs uppercase tracking-widest mb-3">{c.leadershipRole}</p>
-              <p className="text-gray-400 text-sm font-light mb-2">{c.leadershipDesc}</p>
-              <p className="text-gray-500 text-xs font-mono italic">"{c.leadershipQuote}"</p>
+              <h3 className="text-2xl font-bold text-foreground mb-1">{c.leadershipName}</h3>
+              <p className="text-accent font-mono text-xs uppercase tracking-widest mb-3">{c.leadershipRole}</p>
+              <p className="text-muted text-sm font-light mb-2">{c.leadershipDesc}</p>
+              <p className="text-muted-fg text-xs font-mono italic">"{c.leadershipQuote}"</p>
             </div>
           </div>
         </motion.div>
 
         {/* Timeline */}
-        <div className="pt-10 border-t border-white/5">
-          <h3 className="text-2xl font-bold text-white mb-10 text-center uppercase tracking-wider">{c.timelineTitle}</h3>
+        <div className="pt-10 border-t border-border">
+          <h3 className="text-2xl font-bold text-foreground mb-10 text-center uppercase tracking-wider">{c.timelineTitle}</h3>
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 overflow-x-auto">
             {timeline.map((item, i) => (
               <div key={item.year} className="flex flex-col items-center text-center min-w-[120px]">
-                <span className="text-lg font-extrabold text-white mb-2">{item.year}</span>
-                <div className="w-1.5 h-1.5 bg-cyan mb-3" />
-                <p className="text-[9px] font-mono text-gray-500 uppercase tracking-widest leading-relaxed max-w-[140px]">
+                <span className="text-lg font-extrabold text-foreground mb-2">{item.year}</span>
+                <div className="w-1.5 h-1.5 bg-accent mb-3" />
+                <p className="text-[9px] font-mono text-muted-fg uppercase tracking-widest leading-relaxed max-w-[140px]">
                   {language === 'en' ? item.en : item.fr}
                 </p>
               </div>
