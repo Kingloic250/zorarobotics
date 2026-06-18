@@ -19,7 +19,7 @@
 :root {
   --bg: #05070A;
   --fg: #E0E0E0;
-  --accent: #6366F1;
+  --accent: #8AB4F8;
   --card: rgba(255, 255, 255, 0.03);
   --muted: #9CA3AF;
   --muted-fg: #6B7280;
@@ -31,7 +31,7 @@
 .light {
   --bg: #f8fafc;
   --fg: #0f172a;
-  --accent: #4F46E5;
+  --accent: #4285F4;
   --card: #ffffff;
   --muted: #334155;
   --muted-fg: #64748b;
@@ -76,7 +76,7 @@
   }
 
   .text-gradient {
-    @apply bg-linear-to-r from-foreground via-accent to-[#3730A3] bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-foreground via-accent to-[#1A5BB5] bg-clip-text text-transparent;
   }
 
   .cyber-grid {
