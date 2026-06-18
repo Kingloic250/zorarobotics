@@ -23,9 +23,9 @@ export const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary: 'bg-accent text-white hover:bg-accent/90 shadow-lg shadow-accent/20',
-    secondary: 'bg-foreground/10 text-white border border-white/20 hover:bg-accent hover:border-accent hover:text-white transition-all duration-300',
-    outline: 'border border-accent text-white hover:bg-accent transition-all duration-300',
-    ghost: 'text-white/70 hover:text-white',
+    secondary: 'text-foreground border border-border hover:bg-accent hover:text-white hover:border-accent transition-all duration-300',
+    outline: 'border border-accent text-foreground hover:bg-accent hover:text-white transition-all duration-300',
+    ghost: 'text-muted hover:text-white',
   };
 
   const sizes = {
