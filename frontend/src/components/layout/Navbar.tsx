@@ -92,7 +92,7 @@ export const Navbar = () => {
                     initial={{ opacity: 0, y: -8 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
-                    className="absolute top-full left-0 mt-2 w-48 backdrop-blur-xl border border-border/30 p-2 space-y-1"
+                    className="absolute top-full left-0 mt-2 w-48 bg-background/80 backdrop-blur-xl border border-border/30 p-2 space-y-1"
                   >
                     <Link
                       to="/about"
