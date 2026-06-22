@@ -92,7 +92,7 @@ export const Navbar = () => {
                     initial={{ opacity: 0, y: -8 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
-                    className="absolute top-full left-0 mt-2 w-48 glass-panel p-2 space-y-1"
+                    className="absolute top-full left-0 mt-2 w-48 bg-background/70 backdrop-blur-2xl border border-border p-2 space-y-1"
                   >
                     <Link
                       to="/about"
@@ -188,7 +188,7 @@ export const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 right-0 backdrop-blur-xl border-b border-border/30 p-6 flex flex-col gap-5 md:hidden"
+          className="absolute top-full left-0 right-0 bg-background/70 backdrop-blur-2xl border-b border-border p-6 flex flex-col gap-5 md:hidden"
         >
           <Link
             to="/"

@@ -56,6 +56,11 @@
     backdrop-filter: blur(12px);
   }
 
+  .glass-panel-strong {
+    @apply bg-glass border border-glass-border;
+    backdrop-filter: blur(24px);
+  }
+
   .cyan-glow {
     text-shadow: 0 0 15px color-mix(in srgb, var(--accent) 50%, transparent);
   }
