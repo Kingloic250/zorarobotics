@@ -176,8 +176,8 @@ export const RobotsPage = () => {
                 </p>
                 <p className="text-muted text-base font-light mb-6">
                   {language === 'en'
-                    ? 'ZBOS is the proprietary operating system developed by Zorarobotics Belgium that powers all robots in our catalog. It is the first software platform capable of giving life to any smart device.'
-                    : 'ZBOS est le système d\'exploitation propriétaire développé par Zorarobotics Belgique qui alimente tous les robots de notre catalogue. C\'est la première plateforme logicielle capable de donner vie à n\'importe quel appareil intelligent.'}
+                    ? 'ZBOS is the proprietary operating system developed by Zora Robotics Belgium that powers all robots in our catalog. It is the first software platform capable of giving life to any smart device.'
+                    : 'ZBOS est le système d\'exploitation propriétaire développé par Zora Robotics Belgique qui alimente tous les robots de notre catalogue. C\'est la première plateforme logicielle capable de donner vie à n\'importe quel appareil intelligent.'}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[

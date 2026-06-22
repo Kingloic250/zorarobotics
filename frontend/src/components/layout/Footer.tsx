@@ -41,11 +41,11 @@ export const Footer = () => {
             <Link to="/" className="flex items-center gap-3">
               <img
                 src="/images/logo.jpeg"
-                alt="Zorarobotics Africa"
+                alt="Zora Robotics Ltd"
                 className="h-10 w-auto"
               />
               <span className="font-sans text-lg font-extrabold tracking-tighter text-foreground uppercase">
-                Zorarobotics <span className="text-accent">Africa</span>
+                Zora Robotics <span className="text-accent">Ltd</span>
               </span>
             </Link>
             <p className="text-muted-fg text-xs font-mono uppercase tracking-widest leading-relaxed max-w-xs">
@@ -90,7 +90,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:Zorarobotics@gmail.com" className="text-muted-fg hover:text-accent transition-colors text-[10px] font-mono tracking-widest">
+                <a href="mailto:zorarobotics@gmail.com" className="text-muted-fg hover:text-accent transition-colors text-[10px] font-mono tracking-widest">
                   zorarobotics@gmail.com
                 </a>
               </li>
@@ -123,7 +123,7 @@ export const Footer = () => {
 
         <div className="pt-10 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
-            &copy; 2026 Zorarobotics Africa Ltd. All Rights Reserved.
+            &copy; 2026 Zora Robotics Ltd. All Rights Reserved.
           </p>
           <span className="text-muted-fg text-[10px] font-mono uppercase tracking-widest">
             {language === 'en' ? 'Kigali, Rwanda' : 'Kigali, Rwanda'}

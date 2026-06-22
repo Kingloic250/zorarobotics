@@ -9,8 +9,8 @@ const pressMentions = [
     image: '/images/cgtn.png',
     titleEn: 'Rwanda to deploy robots in COVID-19 fight',
     titleFr: 'Le Rwanda va déployer des robots dans la lutte contre le COVID-19',
-    descEn: 'Rwanda acquires smart anti-epidemic robots from Zorarobotics to screen temperatures, deliver food and medicines to COVID-19 patients, and reduce front-line worker exposure.',
-    descFr: 'Le Rwanda acquiert des robots anti-épidémiques intelligents de Zorarobotics pour prendre les températures, livrer nourriture et médicaments aux patients COVID-19, et réduire l\'exposition des travailleurs de première ligne.',
+    descEn: 'Rwanda acquires smart anti-epidemic robots from Zora Robotics to screen temperatures, deliver food and medicines to COVID-19 patients, and reduce front-line worker exposure.',
+    descFr: 'Le Rwanda acquiert des robots anti-épidémiques intelligents de Zora Robotics pour prendre les températures, livrer nourriture et médicaments aux patients COVID-19, et réduire l\'exposition des travailleurs de première ligne.',
     year: '2020',
     url: 'https://newsaf.cgtn.com/news/2020-05-21/Rwanda-to-deploy-robots-in-COVID-19-fight-QEG75qMRkk/index.html',
   },
@@ -19,8 +19,8 @@ const pressMentions = [
     image: '/images/new times.png',
     titleEn: 'Global robotics firm inches closer to launch in Rwanda',
     titleFr: 'Une entreprise mondiale de robotique se rapproche du lancement au Rwanda',
-    descEn: 'Zorarobotics Africa, a subsidiary of Belgian robotics company Zorarobotics, prepares to establish operations in Rwanda, bringing advanced robotics solutions to the region.',
-    descFr: 'Zorarobotics Africa, filiale de la société belge de robotique Zorarobotics, se prépare à établir ses activités au Rwanda, apportant des solutions robotiques avancées dans la région.',
+    descEn: 'Zora Robotics Ltd, a subsidiary of Belgian robotics company Zora Robotics, prepares to establish operations in Rwanda, bringing advanced robotics solutions to the region.',
+    descFr: 'Zora Robotics Ltd, filiale de la société belge de robotique Zora Robotics, se prépare à établir ses activités au Rwanda, apportant des solutions robotiques avancées dans la région.',
     year: '2019',
     url: 'https://www.newtimes.co.rw/article/171271/News/global-robotics-firm-inches-closer-to-launch-in-rwanda',
   },
@@ -29,18 +29,18 @@ const pressMentions = [
     image: '/images/undp.png',
     titleEn: 'UNDP and Government of Rwanda deploy smart anti-epidemic robots to fight COVID-19',
     titleFr: 'Le PNUD et le gouvernement rwandais déploient des robots anti-épidémiques intelligents contre le COVID-19',
-    descEn: 'UNDP partners with Rwanda and Zorarobotics to deploy Adibot and other robots in treatment centres, supporting healthcare workers with disinfection and remote patient monitoring.',
-    descFr: 'Le PNUD s\'associe au Rwanda et à Zorarobotics pour déployer Adibot et d\'autres robots dans les centres de traitement, soutenant les agents de santé avec la désinfection et la surveillance à distance des patients.',
+    descEn: 'UNDP partners with Rwanda and Zora Robotics to deploy Adibot and other robots in treatment centres, supporting healthcare workers with disinfection and remote patient monitoring.',
+    descFr: 'Le PNUD s\'associe au Rwanda et à Zora Robotics pour déployer Adibot et d\'autres robots dans les centres de traitement, soutenant les agents de santé avec la désinfection et la surveillance à distance des patients.',
     year: '2020',
     url: 'https://www.undp.org/africa/news/undp-and-government-rwanda-deploy-smart-anti-epidemic-robots-fight-against-covid-19',
   },
   {
     outlet: 'Rwanda Ministry of Education',
     image: '/images/mineduc.png',
-    titleEn: 'Ministry of Education enters partnership with Zorarobotics Africa to promote STEM in schools',
-    titleFr: 'Le Ministère de l\'Éducation s\'associe à Zorarobotics Africa pour promouvoir les STIM dans les écoles',
-    descEn: 'MINEDUC partners with Zorarobotics Africa to integrate robotics and AI into Rwanda\'s STEM curriculum, training teachers and deploying robots in classrooms nationwide.',
-    descFr: 'Le MINEDUC s\'associe à Zorarobotics Africa pour intégrer la robotique et l\'IA dans le programme STIM du Rwanda, formant les enseignants et déployant des robots dans les classes à travers le pays.',
+    titleEn: 'Ministry of Education enters partnership with Zora Robotics Ltd to promote STEM in schools',
+    titleFr: 'Le Ministère de l\'Éducation s\'associe à Zora Robotics Ltd pour promouvoir les STIM dans les écoles',
+    descEn: 'MINEDUC partners with Zora Robotics Ltd to integrate robotics and AI into Rwanda\'s STEM curriculum, training teachers and deploying robots in classrooms nationwide.',
+    descFr: 'Le MINEDUC s\'associe à Zora Robotics Ltd pour intégrer la robotique et l\'IA dans le programme STIM du Rwanda, formant les enseignants et déployant des robots dans les classes à travers le pays.',
     year: '2021',
     url: 'https://www.mineduc.gov.rw/news-detail/the-ministry-of-education-to-enter-into-partnership-with-zorabots-africa-to-promote-stem-in-rwandan-schools',
   },
@@ -49,8 +49,8 @@ const pressMentions = [
     image: '/images/standard.png',
     titleEn: 'Rwandan medical workers deploy robots to minimise coronavirus risk',
     titleFr: 'Des agents de santé rwandais déploient des robots pour minimiser le risque de coronavirus',
-    descEn: 'Rwandan medics use Zorarobotics robots to screen patients, clean rooms with UV-C light, and deliver supplies — reducing direct contact with infected individuals.',
-    descFr: 'Les médecins rwandais utilisent les robots Zorarobotics pour examiner les patients, nettoyer les chambres avec la lumière UV-C et livrer des fournitures — réduisant le contact direct avec les personnes infectées.',
+    descEn: 'Rwandan medics use Zora Robotics robots to screen patients, clean rooms with UV-C light, and deliver supplies — reducing direct contact with infected individuals.',
+    descFr: 'Les médecins rwandais utilisent les robots Zora Robotics pour examiner les patients, nettoyer les chambres avec la lumière UV-C et livrer des fournitures — réduisant le contact direct avec les personnes infectées.',
     year: '2020',
     url: 'https://www.standardmedia.co.ke/article/2001373595/rwandan-medical-workers-deploy-robots-to-minimise-coronavirus-risk',
   },
@@ -59,8 +59,8 @@ const pressMentions = [
     image: '/images/KT.png',
     titleEn: 'Rwanda Day: Tech innovations to be showcased in Washington D.C.',
     titleFr: 'Rwanda Day : Les innovations technologiques présentées à Washington D.C.',
-    descEn: 'Zorarobotics Africa featured among Rwanda\'s top tech innovations at Rwanda Day in Washington D.C., showcasing robotics solutions on an international stage.',
-    descFr: 'Zorarobotics Africa figure parmi les meilleures innovations technologiques du Rwanda au Rwanda Day à Washington D.C., présentant des solutions robotiques sur la scène internationale.',
+    descEn: 'Zora Robotics Ltd featured among Rwanda\'s top tech innovations at Rwanda Day in Washington D.C., showcasing robotics solutions on an international stage.',
+    descFr: 'Zora Robotics Ltd figure parmi les meilleures innovations technologiques du Rwanda au Rwanda Day à Washington D.C., présentant des solutions robotiques sur la scène internationale.',
     year: '2024',
     url: 'https://www.ktpress.rw/2024/02/rwanda-day-tech-innovations-to-be-showcased-in-washington-dc/',
   },
@@ -69,8 +69,8 @@ const pressMentions = [
     image: '/images/tel.png',
     titleEn: 'Rwanda deploys robots to fight COVID-19',
     titleFr: 'Le Rwanda déploie des robots pour lutter contre le COVID-19',
-    descEn: 'The Telegraph covers Rwanda\'s pioneering use of Zorarobotics\' robots in the COVID-19 response, highlighting how technology is protecting healthcare workers in East Africa.',
-    descFr: 'The Telegraph couvre l\'utilisation pionnière par le Rwanda des robots de Zorarobotics dans la réponse au COVID-19, soulignant comment la technologie protège les agents de santé en Afrique de l\'Est.',
+    descEn: 'The Telegraph covers Rwanda\'s pioneering use of Zora Robotics\' robots in the COVID-19 response, highlighting how technology is protecting healthcare workers in East Africa.',
+    descFr: 'The Telegraph couvre l\'utilisation pionnière par le Rwanda des robots de Zora Robotics dans la réponse au COVID-19, soulignant comment la technologie protège les agents de santé en Afrique de l\'Est.',
     year: '2020',
     url: 'https://www.telegraph.co.uk/global-health/science-and-disease/rwanda-deploys-robots-fight-covid-19/',
   },
@@ -88,7 +88,7 @@ function XIcon({ size, className }: { size: number; className?: string }) {
 const socialChannels = [
   {
     name: 'LinkedIn',
-    handle: 'Zorarobotics Africa Ltd',
+    handle: 'Zora Robotics Ltd',
     followers: '297 followers',
     url: 'https://rw.linkedin.com/company/zorabots-africa',
     icon: Linkedin,
@@ -119,7 +119,7 @@ const socialChannels = [
   {
     name: 'Instagram',
     handle: '@zorabots_africa',
-    followers: 'Zorarobotics Africa',
+    followers: 'Zora Robotics Ltd',
     url: 'https://www.instagram.com/zorabots_africa/',
     icon: Instagram,
     color: 'hover:text-[#E4405F]',
@@ -128,7 +128,7 @@ const socialChannels = [
   },
   {
     name: 'YouTube',
-    handle: 'Zorarobotics Africa',
+    handle: 'Zora Robotics Ltd',
     followers: 'Channel',
     url: 'https://www.youtube.com/channel/UC6FWjluEyNztGFmWrlEzQcw',
     icon: Youtube,
@@ -158,8 +158,8 @@ export const NewsPage = () => {
           </h2>
           <p className="text-muted text-lg font-light">
             {language === 'en'
-              ? 'Zorarobotics Africa in the news. Press coverage, media mentions, and social media channels.'
-              : 'Zorarobotics Africa dans l\'actualité. Couverture presse, mentions médias et réseaux sociaux.'}
+              ? 'Zora Robotics Ltd in the news. Press coverage, media mentions, and social media channels.'
+              : 'Zora Robotics Ltd dans l\'actualité. Couverture presse, mentions médias et réseaux sociaux.'}
           </p>
         </motion.div>
 

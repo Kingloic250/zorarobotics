@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { GlassCard } from '../ui/GlassCard';
 import { useLanguage } from '../../context/LanguageContext';
 
-export const WhyZorarobotics = () => {
+export const WhyZoraRobotics = () => {
   const { language } = useLanguage();
 
   const items = [
@@ -62,10 +62,10 @@ export const WhyZorarobotics = () => {
             viewport={{ once: true }}
           >
             <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
-              Why Zorarobotics // 06
+              Why Zora Robotics // 06
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-tighter">
-              {language === 'en' ? 'Why Zorarobotics Africa' : 'Pourquoi Zorarobotics Africa'}
+              {language === 'en' ? 'Why Zora Robotics Ltd' : 'Pourquoi Zora Robotics Ltd'}
             </h2>
             <p className="text-muted text-lg font-light">
               {language === 'en'

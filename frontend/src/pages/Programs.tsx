@@ -31,8 +31,8 @@ export const ProgramsPage = () => {
           </h2>
           <p className="text-muted text-lg font-light">
             {language === 'en'
-              ? 'Zorarobotics Africa delivers tailored robotics and AI programs across key sectors.'
-              : 'Zorarobotics Africa propose des programmes de robotique et d\'IA adaptés aux secteurs clés.'}
+              ? 'Zora Robotics Ltd delivers tailored robotics and AI programs across key sectors.'
+              : 'Zora Robotics Ltd propose des programmes de robotique et d\'IA adaptés aux secteurs clés.'}
           </p>
         </motion.div>
 

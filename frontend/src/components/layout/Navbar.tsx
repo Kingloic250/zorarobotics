@@ -48,11 +48,11 @@ export const Navbar = () => {
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/images/logo.jpeg"
-            alt="Zorarobotics Africa"
+            alt="Zora Robotics Ltd"
             className="h-10 w-auto"
           />
           <span className="font-sans text-lg font-extrabold tracking-tighter text-foreground uppercase hidden sm:block">
-            Zorarobotics
+Zora Robotics
           </span>
         </Link>
 

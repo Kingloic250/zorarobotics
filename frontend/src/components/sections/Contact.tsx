@@ -112,7 +112,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">{c.emailLabel}</p>
-                  <a href="mailto:Zorarobotics@gmail.com" className="text-lg font-medium text-foreground hover:text-accent transition-colors">{c.email}</a>
+                  <a href="mailto:zorarobotics@gmail.com" className="text-lg font-medium text-foreground hover:text-accent transition-colors">{c.email}</a>
                 </div>
               </div>
 
@@ -142,7 +142,7 @@ export const ContactSection = () => {
                   width="100%"
                   height="100%"
                   loading="lazy"
-                  title={language === 'en' ? 'Zorarobotics Lab Location' : "Emplacement du Labo Zorarobotics"}
+                  title={language === 'en' ? 'Zora Robotics Lab Location' : "Emplacement du Labo Zora Robotics"}
                 />
               </div>
             </div>
