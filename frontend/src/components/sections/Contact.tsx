@@ -13,7 +13,7 @@ export const ContactSection = () => {
     en: {
       badge: 'Contact // 07',
       title1: 'START YOUR',
-      title2: 'ROBOTICS PROJECT',
+      title2: 'ROBOTICS PROJECT WITH US ',
       description: 'Whether you are looking to automate a single facility or deploy a robotics ecosystem across Africa, our team is ready to help.',
       emailLabel: 'Email Us',
       email: 'zorarobotics@gmail.com',
@@ -99,7 +99,7 @@ export const ContactSection = () => {
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight italic">
               {c.title1} <br />
-              <span className="text-gradient uppercase tracking-tighter">{c.title2}</span>
+              <span className="text-gradient uppercase tracking-wide">{c.title2}</span>
             </h2>
             <p className="text-muted text-lg font-light mb-12 leading-relaxed max-w-md">
               {c.description}

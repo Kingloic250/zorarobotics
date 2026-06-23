@@ -91,7 +91,7 @@ export const PartnershipsPage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-                { en: 'Youth Robotics Club', fr: 'Youth Robotics Club' },
+                { en: 'New Generation Academy', fr: 'Académie de la Nouvelle Génération' },
               { en: 'ITConsortium (ITC)', fr: 'ITConsortium (ITC)' },
               { en: 'Rwanda ICT Chamber', fr: 'Chambre des TIC du Rwanda' },
               { en: 'University of Aberdeen', fr: 'Université d\'Aberdeen' },

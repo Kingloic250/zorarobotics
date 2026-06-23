@@ -9,8 +9,9 @@ import undpLogo from '../assets/logos/UNDP.png';
 import educLogo from '../assets/logos/download.jpg';
 import healthLogo from '../assets/logos/MINSANTE.png';
 import ictLogo from '../assets/logos/MINICT.png';
-import withinTechLogo from '../assets/logos/WithinTech.png';
-import amaliTechLogo from '../assets/logos/AmaliTech.png';
+import newLogo from '../assets/logos/new.jpg';
+import aberdeenLogo from '../assets/logos/Univ-of-Aberdeen.webp';
+import itcLogo from '../assets/logos/ITC.png';
 
 const sectors = [
   { icon: GraduationCap, nameEn: 'Education', nameFr: 'Éducation', to: '/solutions' },
@@ -158,19 +159,21 @@ export const Home = () => {
           <div className="marquee-track">
             <div className="flex gap-24 items-center shrink-0">
               <img src={undpLogo} alt="UNDP" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={withinTechLogo} alt="WithinTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={amaliTechLogo} alt="AmaliTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={newLogo} alt="New Generation Academy" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={itcLogo} alt="ITC" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={aberdeenLogo} alt="University of Aberdeen" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
             </div>
             <div className="flex gap-24 items-center shrink-0">
               <img src={undpLogo} alt="UNDP" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={withinTechLogo} alt="WithinTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
-              <img src={amaliTechLogo} alt="AmaliTech" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={educLogo} alt="Ministry of Education Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={healthLogo} alt="Ministry of Health Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={ictLogo} alt="Ministry of ICT Rwanda" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={newLogo} alt="New Generation Academy" className="h-20 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={itcLogo} alt="ITC" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
+              <img src={aberdeenLogo} alt="University of Aberdeen" className="h-16 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500" />
             </div>
           </div>
         </div>

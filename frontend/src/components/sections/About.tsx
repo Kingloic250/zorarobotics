@@ -25,6 +25,10 @@ export const About = () => {
       leadershipRole: 'CEO / co-Founder',
       leadershipDesc: 'University of Aberdeen alumnus. Former Vice Chair, Rwanda ICT Chamber. Former International Roaming Coordinator, MTN Rwanda.',
       leadershipQuote: '"Introducing robotics in Africa through Rwanda."',
+      leader2Name: 'Victor',
+      leader2Role: 'co-Founder',
+      leader2Desc: 'Co-founder of Zora Robotics Ltd.',
+      leader2Quote: '"Building Africa\'s robotics future."',
       timelineTitle: 'Our Journey',
     },
     fr: {
@@ -45,6 +49,10 @@ export const About = () => {
       leadershipRole: 'CEO / Président',
       leadershipDesc: 'Diplômé de l\'Université d\'Aberdeen. Ancien Vice-Président, Rwanda ICT Chamber. Ancien Coordinateur Itinérance Internationale, MTN Rwanda.',
       leadershipQuote: '"Introduire la robotique en Afrique à travers le Rwanda."',
+      leader2Name: 'Victor',
+      leader2Role: 'co-Fondateur',
+      leader2Desc: 'Co-fondateur de Zora Robotics Ltd.',
+      leader2Quote: '"Construire l\'avenir de la robotique en Afrique."',
       timelineTitle: 'Notre Parcours',
     },
   };
@@ -109,22 +117,70 @@ export const About = () => {
         </div>
 
         {/* Leadership */}
-        <motion.div
-          whileHover={{ y: -4, borderColor: 'rgba(0, 242, 255, 0.3)' }}
-          className="mb-20 p-8 glass-panel border-accent/10 hover:bg-card transition-all duration-300 group"
-        >
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-24 h-24 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-              <span className="text-3xl font-bold text-accent">BK</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+          <motion.div
+            whileHover={{ y: -4, borderColor: 'rgba(0, 242, 255, 0.3)' }}
+            className="p-8 glass-panel border-accent/10 hover:bg-card transition-all duration-300 group"
+          >
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-24 h-24 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                <span className="text-3xl font-bold text-accent">BK</span>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-1">{c.leadershipName}</h3>
+                <p className="text-accent font-mono text-xs uppercase tracking-widest mb-3">{c.leadershipRole}</p>
+                <p className="text-muted text-sm font-light mb-2">{c.leadershipDesc}</p>
+                <p className="text-muted-fg text-xs font-mono italic">"{c.leadershipQuote}"</p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-1">{c.leadershipName}</h3>
-              <p className="text-accent font-mono text-xs uppercase tracking-widest mb-3">{c.leadershipRole}</p>
-              <p className="text-muted text-sm font-light mb-2">{c.leadershipDesc}</p>
-              <p className="text-muted-fg text-xs font-mono italic">"{c.leadershipQuote}"</p>
+          </motion.div>
+          <motion.div
+            whileHover={{ y: -4, borderColor: 'rgba(0, 242, 255, 0.3)' }}
+            className="p-8 glass-panel border-accent/10 hover:bg-card transition-all duration-300 group"
+          >
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-24 h-24 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                <span className="text-3xl font-bold text-accent">V</span>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-1">{c.leader2Name}</h3>
+                <p className="text-accent font-mono text-xs uppercase tracking-widest mb-3">{c.leader2Role}</p>
+                <p className="text-muted text-sm font-light mb-2">{c.leader2Desc}</p>
+                <p className="text-muted-fg text-xs font-mono italic">"{c.leader2Quote}"</p>
+              </div>
             </div>
+          </motion.div>
+        </div>
+
+        {/* Board Members */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center uppercase tracking-wider">Board Members</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {['Alice Uwimana', 'Dr. Jean Paul', 'David Mugisha', 'Grace Iragena'].map((name, i) => (
+              <div key={i} className="glass-panel p-6 text-center border-accent/10 group hover:bg-card transition-all">
+                <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="text-lg font-bold text-accent">{name.split(' ').map(n => n[0]).join('')}</span>
+                </div>
+                <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">{name}</h4>
+              </div>
+            ))}
           </div>
-        </motion.div>
+        </div>
+
+        {/* Team Members */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center uppercase tracking-wider">Team Members</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {['Patrick Habimana', 'Diane Ishimwe', 'Eric Niyonzima', 'Sarah Uwase', 'Claude Munyaneza', 'Joelle Mukamana'].map((name, i) => (
+              <div key={i} className="glass-panel p-4 text-center border-accent/5 group hover:bg-card transition-all">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                  <span className="text-sm font-bold text-accent">{name.split(' ').map(n => n[0]).join('')}</span>
+                </div>
+                <p className="text-xs font-bold text-foreground uppercase tracking-wider">{name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Timeline */}
         <div className="pt-10 border-t border-border">
