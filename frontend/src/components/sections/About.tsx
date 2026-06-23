@@ -60,13 +60,9 @@ export const About = () => {
   const c = content[language];
 
   const timeline = [
-    { year: 'Oct 2019', en: 'Telmet Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Telmet Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
-    { year: 'Nov 2019', en: 'Zora Robotics Ltd announced as Rwanda\'s first robotics company', fr: 'Zora Robotics Ltd annoncée comme première entreprise de robotique au Rwanda' },
-    { year: 'Jan 2020', en: 'Operations begin in Kigali; first Zora Shop opens', fr: 'Début des opérations à Kigali; première Zora Shop ouverte' },
-    { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },
-    { year: 'Sep 2021', en: 'Partnership with Rwanda Ministry of Education for STEM', fr: 'Partenariat avec le Ministère de l\'Éducation du Rwanda pour les STIM' },
-    { year: '2023–24', en: 'Represented at Rwanda Day Washington D.C.; East Africa expansion', fr: 'Représenté au Rwanda Day à Washington D.C.; expansion en Afrique de l\'Est' },
-    { year: 'Ongoing', en: 'Partnerships with UNDP, Ministries, Youth Robotics Club & more', fr: 'Partenariats avec le PNUD, Ministères, Youth Robotics Club et plus' },
+    { year: 'Jan 2019', en: 'Company founded as Robotical Africa Ltd', fr: 'Société fondée sous le nom de Robotical Africa Ltd' },
+    { year: 'Feb 2020', en: 'Rebranded to Zora Bots Africa Ltd', fr: 'Renommée Zora Bots Africa Ltd' },
+    { year: 'May 2023', en: 'Final rebrand to Zora Robotics Ltd', fr: 'Renommage final en Zora Robotics Ltd' },
   ];
 
   return (
@@ -186,7 +182,7 @@ export const About = () => {
         <div className="pt-10 border-t border-border">
           <h3 className="text-2xl font-bold text-foreground mb-10 text-center uppercase tracking-wider">{c.timelineTitle}</h3>
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 overflow-x-auto">
-            {timeline.map((item, i) => (
+            {timeline.map((item) => (
               <div key={item.year} className="flex flex-col items-center text-center min-w-[120px]">
                 <span className="text-lg font-extrabold text-foreground mb-2">{item.year}</span>
                 <div className="w-1.5 h-1.5 bg-accent mb-3" />
