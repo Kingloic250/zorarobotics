@@ -149,6 +149,7 @@ export const About = () => {
         </div>
 
         {/* Board Members */}
+        {/*
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center uppercase tracking-wider">Board Members</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -162,17 +163,25 @@ export const About = () => {
             ))}
           </div>
         </div>
+        */}
 
         {/* Team Members */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center uppercase tracking-wider">Team Members</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {['Patrick Habimana', 'Diane Ishimwe', 'Eric Niyonzima', 'Sarah Uwase', 'Claude Munyaneza', 'Joelle Mukamana'].map((name, i) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              { name: 'Delice Umutesi', role: 'Program Manager' },
+              { name: 'Bruce Rutagengwa', role: 'Robotics Engineer' },
+              { name: 'Loic Rudahigwa Mparabanyi', role: 'Software Engineer' },
+              { name: 'Brian Gisagara Ganza', role: 'Software Engineer' },
+              { name: 'Celce Manzi Shema', role: 'Financial Analyst' },
+            ].map((member, i) => (
               <div key={i} className="glass-panel p-4 text-center border-accent/5 group hover:bg-card transition-all">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-sm font-bold text-accent">{name.split(' ').map(n => n[0]).join('')}</span>
+                  <span className="text-sm font-bold text-accent">{member.name.split(' ').map(n => n[0]).join('')}</span>
                 </div>
-                <p className="text-xs font-bold text-foreground uppercase tracking-wider">{name}</p>
+                <p className="text-xs font-bold text-foreground uppercase tracking-wider">{member.name}</p>
+                <p className="text-[9px] font-mono text-muted-fg uppercase tracking-widest mt-1">{member.role}</p>
               </div>
             ))}
           </div>
