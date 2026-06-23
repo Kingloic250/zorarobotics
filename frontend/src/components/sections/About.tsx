@@ -17,12 +17,12 @@ export const About = () => {
       desc2: 'We accelerate Africa\'s transformation into a knowledge-driven, technology-powered continent starting from Rwanda.',
       values: [
         { icon: Target, title: 'Mission', desc: 'Africa\'s most impact-driven partner in robotics and AI adoption.' },
-        { icon: Users, title: 'Team', desc: '11–50 employees in Kigali, growing across East Africa.' },
-        { icon: Globe, title: 'Reach', desc: 'Robots deployed in Rwanda, Kenya, and expanding across Africa.' },
-        { icon: Award, title: 'Impact', desc: 'Aligned with Rwanda Vision 2050 and Africa\'s ICT agenda.' },
+        { icon: Users, title: 'Team', desc: '11–20 employees in Kigali, growing across East Africa.' },
+        { icon: Globe, title: 'Reach', desc: 'Robots deployed in Rwanda, Kenya, Equatorial Guinea and expanding across Africa.' },
+        { icon: Award, title: 'Impact', desc: 'Aligned with Rwanda Vision 2050 and African Union\'s ICT agenda.' },
       ],
       leadershipName: 'Benjamin Karenzi',
-      leadershipRole: 'CEO / Chairman',
+      leadershipRole: 'CEO / co-Founder',
       leadershipDesc: 'University of Aberdeen alumnus. Former Vice Chair, Rwanda ICT Chamber. Former International Roaming Coordinator, MTN Rwanda.',
       leadershipQuote: '"Introducing robotics in Africa through Rwanda."',
       timelineTitle: 'Our Journey',
@@ -37,9 +37,9 @@ export const About = () => {
       desc2: 'Nous accélérons la transformation de l\'Afrique en un continent axé sur la connaissance et la technologie — en commençant par le Rwanda.',
       values: [
         { icon: Target, title: 'Mission', desc: 'Le partenaire le plus impactant d\'Afrique en robotique et IA.' },
-        { icon: Users, title: 'Équipe', desc: '11–50 employés à Kigali, en croissance en Afrique de l\'Est.' },
-        { icon: Globe, title: 'Portée', desc: 'Robots déployés au Rwanda, Kenya, et en expansion en Afrique.' },
-        { icon: Award, title: 'Impact', desc: 'Aligné sur la Vision 2050 du Rwanda et l\'agenda TIC de l\'Afrique.' },
+        { icon: Users, title: 'Équipe', desc: '11–20 employés à Kigali, en croissance en Afrique de l\'Est.' },
+        { icon: Globe, title: 'Portée', desc: 'Robots déployés au Rwanda, Kenya, Guinée Équatoriale et en expansion en Afrique.' },
+        { icon: Award, title: 'Impact', desc: 'Aligné sur la Vision 2050 du Rwanda et l\'agenda TIC de l\'Union Africaine.' },
       ],
       leadershipName: 'Benjamin Karenzi',
       leadershipRole: 'CEO / Président',
@@ -52,7 +52,7 @@ export const About = () => {
   const c = content[language];
 
   const timeline = [
-    { year: 'Oct 2019', en: 'Zora Robotics Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Zora Robotics Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
+    { year: 'Oct 2019', en: 'Telmet Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Telmet Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
     { year: 'Nov 2019', en: 'Zora Robotics Ltd announced as Rwanda\'s first robotics company', fr: 'Zora Robotics Ltd annoncée comme première entreprise de robotique au Rwanda' },
     { year: 'Jan 2020', en: 'Operations begin in Kigali; first Zora Shop opens', fr: 'Début des opérations à Kigali; première Zora Shop ouverte' },
     { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },

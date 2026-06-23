@@ -43,10 +43,10 @@ export const PartnershipsPage = () => {
               { en: 'Ministry of Education', fr: 'Ministère de l\'Éducation' },
               { en: 'Ministry of Health', fr: 'Ministère de la Santé' },
               { en: 'Ministry of ICT & Innovation', fr: 'Ministère des TIC & Innovation' },
-              { en: 'Rwanda Mines Board', fr: 'Office des Mines du Rwanda' },
+              { en: 'Rwanda Mines and Petroleum Board', fr: 'Office des Mines du Rwanda' },
             ].map((partner) => (
-              <div key={partner.en}>
-                <GlassCard className="text-center py-8 group">
+              <div key={partner.en} className="h-full">
+                <GlassCard className="text-center py-8 h-full group">
                   <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -66,12 +66,12 @@ export const PartnershipsPage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { en: 'UNDP Rwanda Accelerator Lab', fr: 'PNUD Rwanda Accelerator Lab' },
-              { en: 'UNDP Kenya (Ministry of Health)', fr: 'PNUD Kenya (Ministère de la Santé)' },
+              { en: 'UNDP Accelerator Lab', fr: 'PNUD Accelerator Lab' },
+              { en: 'Kenya (Ministry of Health)', fr: 'Kenya (Ministère de la Santé)' },
               { en: 'Digital Transformation Center Rwanda', fr: 'Centre de Transformation Numérique Rwanda' },
             ].map((partner) => (
-              <div key={partner.en}>
-                <GlassCard className="text-center py-8 group">
+              <div key={partner.en} className="h-full">
+                <GlassCard className="text-center py-8 h-full group">
                   <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -92,12 +92,12 @@ export const PartnershipsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
                 { en: 'Youth Robotics Club', fr: 'Youth Robotics Club' },
-              { en: 'AmaliTech Kigali', fr: 'AmaliTech Kigali' },
+              { en: 'ITConsortium (ITC)', fr: 'ITConsortium (ITC)' },
               { en: 'Rwanda ICT Chamber', fr: 'Chambre des TIC du Rwanda' },
               { en: 'University of Aberdeen', fr: 'Université d\'Aberdeen' },
             ].map((partner) => (
-              <div key={partner.en}>
-                <GlassCard className="text-center py-8 group">
+              <div key={partner.en} className="h-full">
+                <GlassCard className="text-center py-8 h-full group">
                   <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">
                     {language === 'en' ? partner.en : partner.fr}
                   </h4>
@@ -121,7 +121,7 @@ export const PartnershipsPage = () => {
                 icon: HeartPulse,
                 titleEn: 'COVID-19 Response',
                 titleFr: 'Réponse COVID-19',
-                descEn: '5 anti-epidemic robots deployed across Rwanda\'s treatment centers and Kigali International Airport — a first for Africa.',
+                descEn: '5 anti-epidemic robots deployed across Rwanda\'s treatment centers and Kigali International Airport a first for Africa.',
                 descFr: '5 robots anti-épidémiques déployés dans les centres de traitement et à l\'Aéroport de Kigali — une première en Afrique.',
               },
               {

@@ -3,7 +3,7 @@ import { GlassCard } from '../components/ui/GlassCard';
 import { useLanguage } from '../context/LanguageContext';
 
 const timeline = [
-  { year: 'Oct 2019', en: 'Zora Robotics Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Zora Robotics Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
+  { year: 'Oct 2019', en: 'Telmet Belgium meets President Kagame at Rwanda Day, Bonn', fr: 'Telmet Belgique rencontre le Président Kagame au Rwanda Day, Bonn' },
   { year: 'Nov 2019', en: 'Zora Robotics Ltd announced as Rwanda\'s first robotics company', fr: 'Zora Robotics Ltd annoncée comme première entreprise de robotique au Rwanda' },
   { year: 'Jan 2020', en: 'Operations begin in Kigali; first Zora Shop opens', fr: 'Début des opérations à Kigali; première Zora Shop ouverte' },
   { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },

@@ -15,16 +15,6 @@ const pressMentions = [
     url: 'https://newsaf.cgtn.com/news/2020-05-21/Rwanda-to-deploy-robots-in-COVID-19-fight-QEG75qMRkk/index.html',
   },
   {
-    outlet: 'The New Times Rwanda',
-    image: '/images/new times.png',
-    titleEn: 'Global robotics firm inches closer to launch in Rwanda',
-    titleFr: 'Une entreprise mondiale de robotique se rapproche du lancement au Rwanda',
-    descEn: 'Zora Robotics Ltd, a subsidiary of Belgian robotics company Zora Robotics, prepares to establish operations in Rwanda, bringing advanced robotics solutions to the region.',
-    descFr: 'Zora Robotics Ltd, filiale de la société belge de robotique Zora Robotics, se prépare à établir ses activités au Rwanda, apportant des solutions robotiques avancées dans la région.',
-    year: '2019',
-    url: 'https://www.newtimes.co.rw/article/171271/News/global-robotics-firm-inches-closer-to-launch-in-rwanda',
-  },
-  {
     outlet: 'UNDP',
     image: '/images/undp.png',
     titleEn: 'UNDP and Government of Rwanda deploy smart anti-epidemic robots to fight COVID-19',

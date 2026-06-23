@@ -20,8 +20,8 @@ const robots = [
     sectorEn: 'Healthcare & Education',
     sectorFr: 'Santé & Éducation',
     image: '/images/Robin Robot.jpg',
-    descEn: 'Social companion robot that supports patients, especially children, during recovery.',
-    descFr: 'Robot compagnon social qui soutient les patients, surtout les enfants, pendant la guérison.',
+    descEn: 'Support patients and children with special needs, like speech therapy for recovery and learning.',
+    descFr: 'Soutenir les patients et les enfants ayant des besoins spéciaux, comme la thérapie de la parole pour la récupération et l\'apprentissage.',
     featuresEn: ['Social Companion', 'Patient Support', 'Therapeutic'],
     featuresFr: ['Compagnon Social', 'Soutien aux Patients', 'Thérapeutique'],
   },
@@ -107,8 +107,8 @@ export const RobotsPage = () => {
           </h2>
           <p className="text-muted text-lg font-light">
             {language === 'en'
-              ? 'Many advanced robots powered by the ZBOS platform, serving Education, Healthcare, Industry, Hospitality, and Security sectors.'
-              : 'Huit robots avancés propulsés par la plateforme ZBOS, servant les secteurs de l\'Éducation, de la Santé, de l\'Industrie, de l\'Hôtellerie et de la Sécurité.'}
+              ? 'Many advanced robots powered by the ROS platform, serving Education, Healthcare, Mining Industry, Hospitality, and Security sectors.'
+              : 'Huit robots avancés propulsés par la plateforme ROS, servant les secteurs de l\'Éducation, de la Santé, de la Mines, de l\'Hôtellerie et de la Sécurité.'}
           </p>
         </motion.div>
 
@@ -176,8 +176,8 @@ export const RobotsPage = () => {
                 </p>
                 <p className="text-muted text-base font-light mb-6">
                   {language === 'en'
-                    ? 'ZBOS is the proprietary operating system developed by Zora Robotics Belgium that powers all robots in our catalog. It is the first software platform capable of giving life to any smart device.'
-                    : 'ZBOS est le système d\'exploitation propriétaire développé par Zora Robotics Belgique qui alimente tous les robots de notre catalogue. C\'est la première plateforme logicielle capable de donner vie à n\'importe quel appareil intelligent.'}
+                    ? 'ZBOS is the proprietary operating system developed by Telmet Belgium that powers all robots in our catalog. It is the first software platform capable of giving life to any smart device.'
+                    : 'ZBOS est le système d\'exploitation propriétaire développé par Telmet Belgique qui alimente tous les robots de notre catalogue. C\'est la première plateforme logicielle capable de donner vie à n\'importe quel appareil intelligent.'}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
