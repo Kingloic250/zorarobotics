@@ -181,9 +181,10 @@ export const About = () => {
         {/* Timeline */}
         <div className="pt-10 border-t border-border">
           <h3 className="text-2xl font-bold text-foreground mb-10 text-center uppercase tracking-wider">{c.timelineTitle}</h3>
-          <div className="flex flex-col md:flex-row items-start justify-between gap-8 overflow-x-auto">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-8 overflow-x-auto relative">
+            <div className="hidden md:block absolute top-[39px] left-[5%] right-[5%] h-px bg-border z-0" />
             {timeline.map((item) => (
-              <div key={item.year} className="flex flex-col items-center text-center min-w-[120px]">
+              <div key={item.year} className="flex flex-col items-center text-center min-w-[120px] relative z-10">
                 <span className="text-lg font-extrabold text-foreground mb-2">{item.year}</span>
                 <div className="w-1.5 h-1.5 bg-accent mb-3" />
                 <p className="text-[9px] font-mono text-muted-fg uppercase tracking-widest leading-relaxed max-w-[140px]">
