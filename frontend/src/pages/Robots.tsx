@@ -107,7 +107,7 @@ export const RobotsPage = () => {
           </h2>
           <p className="text-muted text-lg font-light">
             {language === 'en'
-              ? 'Many advanced robots powered by the ROS platform, serving Education, Healthcare, Mining Industry, Hospitality, and Security sectors.'
+              ? 'Many advanced robots powered by ROS platform, serving Education, Healthcare, Mining Industry, Hospitality, and Security sectors.'
               : 'Huit robots avancés propulsés par la plateforme ROS, servant les secteurs de l\'Éducation, de la Santé, de la Mines, de l\'Hôtellerie et de la Sécurité.'}
           </p>
         </motion.div>
