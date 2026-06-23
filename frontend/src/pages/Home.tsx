@@ -51,8 +51,8 @@ export const Home = () => {
               </h2>
               <p className="text-muted text-lg font-light">
                 {language === 'en'
-                  ? 'Deploying advanced robotics across key industries in Africa.'
-                  : 'Déploiement de la robotique avancée dans les industries clés en Afrique.'}
+                  ? 'Deploying advanced AI and robotics solutions across Africa.'
+                  : 'Déploiement de solutions avancées d\'IA et de robotique à travers l\'Afrique.'}
               </p>
             </motion.div>
           </div>

@@ -91,7 +91,7 @@ export const PartnershipsPage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { en: 'WithinTechRwanda', fr: 'WithinTechRwanda' },
+                { en: 'Youth Robotics Club', fr: 'Youth Robotics Club' },
               { en: 'AmaliTech Kigali', fr: 'AmaliTech Kigali' },
               { en: 'Rwanda ICT Chamber', fr: 'Chambre des TIC du Rwanda' },
               { en: 'University of Aberdeen', fr: 'Université d\'Aberdeen' },
@@ -142,8 +142,8 @@ export const PartnershipsPage = () => {
                 icon: Microscope,
                 titleEn: 'Youth Empowerment',
                 titleFr: 'Autonomisation des Jeunes',
-                descEn: 'Collaboration with WithinTechRwanda to bring robotics and coding to Rwandan youth.',
-                descFr: 'Collaboration avec WithinTechRwanda pour apporter la robotique aux jeunes Rwandais.',
+                descEn: 'Collaboration with Youth Robotics Club to bring robotics and coding to Rwandan youth.',
+                descFr: 'Collaboration avec Youth Robotics Club pour apporter la robotique aux jeunes Rwandais.',
               },
               {
                 icon: Building,

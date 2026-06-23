@@ -9,7 +9,7 @@ const timeline = [
   { year: 'May 2020', en: '5 anti-epidemic robots deployed with UNDP & Govt of Rwanda', fr: '5 robots anti-épidémiques déployés avec le PNUD et le Gouvernement du Rwanda' },
   { year: 'Sep 2021', en: 'Partnership with Rwanda Ministry of Education for STEM', fr: 'Partenariat avec le Ministère de l\'Éducation du Rwanda pour les STIM' },
   { year: '2023–24', en: 'Represented at Rwanda Day Washington D.C.; East Africa expansion', fr: 'Représenté au Rwanda Day à Washington D.C.; expansion en Afrique de l\'Est' },
-  { year: 'Ongoing', en: 'Partnerships with UNDP, Ministries, WithinTechRwanda & more', fr: 'Partenariats avec le PNUD, Ministères, WithinTechRwanda et plus' },
+  { year: 'Ongoing', en: 'Partnerships with UNDP, Ministries, Youth Robotics Club & more', fr: 'Partenariats avec le PNUD, Ministères, Youth Robotics Club et plus' },
 ];
 
 export const JourneyPage = () => {

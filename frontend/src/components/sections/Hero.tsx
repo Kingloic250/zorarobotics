@@ -47,7 +47,7 @@ export const Hero = () => {
       headline1: 'Bringing the World\'s Most',
       headlineSpan: 'Advanced Humanoid Robots',
       headline2: 'to Africa.',
-      description: 'Zora Robotics Pioneering AI and Robotics in Rwanda and across the continent, transforming Healthcare, Education, Industry and more.',
+      description: 'Zora Robotics ltd pioneering AI and Robotics solutions in Rwanda and across the continent, transforming Healthcare, Education, mining Industry and much more.',
       cta1: 'Explore Our Robots',
       cta2: 'Partner With Us',
       scroll: 'Scroll to Discover',
@@ -132,7 +132,7 @@ export const Hero = () => {
                   <span className="text-[10px] uppercase tracking-widest text-accent font-mono">{language === 'en' ? 'Founded in Rwanda' : 'Fond\u00e9 au Rwanda'}</span>
                 </div>
                 <div className="space-y-1">
-                  <CountUp end={8} suffix="+" />
+                  <CountUp end={11} suffix="+" />
                   <span className="text-[10px] uppercase tracking-widest text-accent font-mono">{language === 'en' ? 'Robot Models' : 'Mod\u00e8les de Robots'}</span>
                 </div>
                 <div className="space-y-1">
