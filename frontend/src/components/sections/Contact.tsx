@@ -68,7 +68,8 @@ export const ContactSection = () => {
     if (!formData.name || !formData.email || !formData.message) return;
     setStatus('sending');
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/contact`, {
+      const base = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+      const res = await fetch(`${base}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
