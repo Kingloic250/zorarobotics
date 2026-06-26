@@ -2,9 +2,12 @@
   "name": "zorabots",
   "private": true,
   "scripts": {
-    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
-    "start": "cd backend && npx tsx server.ts",
+    "build": "npm install && cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "node server.js",
     "dev": "cd frontend && npm run dev",
     "start:backend": "cd backend && npm run dev"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4"
   }
 }
