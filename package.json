@@ -1,10 +1,8 @@
 {
   "name": "zorabots",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "npm install && cd frontend && npm install && npm run build && cd ../backend && npm install && cd .. && npx tsc",
-    "start": "NODE_PATH=backend/node_modules node dist/backend/server.js",
+    "build": "cd frontend && npm install && npm run build",
     "dev": "cd frontend && npm run dev",
     "start:backend": "cd backend && npm run dev"
   },
