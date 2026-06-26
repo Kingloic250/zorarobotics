@@ -25,8 +25,8 @@ export const About = () => {
       leadershipRole: 'CEO / co-Founder',
       leadershipDesc: 'University of Aberdeen alumnus. Former Vice Chair, Rwanda ICT Chamber. Former International Roaming Coordinator, MTN Rwanda.',
       leadershipQuote: '"Introducing robotics in Africa through Rwanda."',
-      leader2Name: 'Victor',
-      leader2Role: 'co-Founder',
+      leader2Name: 'Victor Ngaboyamahoro',
+      leader2Role: 'Co-Founder',
       leader2Desc: 'Co-founder of Zora Robotics Ltd.',
       leader2Quote: '"Building Africa\'s robotics future."',
       timelineTitle: 'Our Journey',
@@ -49,8 +49,8 @@ export const About = () => {
       leadershipRole: 'CEO / Président',
       leadershipDesc: 'Diplômé de l\'Université d\'Aberdeen. Ancien Vice-Président, Rwanda ICT Chamber. Ancien Coordinateur Itinérance Internationale, MTN Rwanda.',
       leadershipQuote: '"Introduire la robotique en Afrique à travers le Rwanda."',
-      leader2Name: 'Victor',
-      leader2Role: 'co-Fondateur',
+      leader2Name: 'Victor Ngaboyamahoro',
+      leader2Role: 'Co-Fondateur',
       leader2Desc: 'Co-fondateur de Zora Robotics Ltd.',
       leader2Quote: '"Construire l\'avenir de la robotique en Afrique."',
       timelineTitle: 'Notre Parcours',
@@ -136,7 +136,7 @@ export const About = () => {
           >
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-24 h-24 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
-                <span className="text-3xl font-bold text-accent">V</span>
+                <span className="text-3xl font-bold text-accent">VN</span>
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-1">{c.leader2Name}</h3>
