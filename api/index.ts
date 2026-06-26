@@ -1,10 +1,18 @@
 import 'dotenv/config';
 import express from 'express';
 import { Resend } from 'resend';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
 app.use(express.json());
+
+// Serve built frontend
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 app.post('/api/contact', async (req, res) => {
   const { name, email, organization, sector, message } = req.body;
@@ -49,6 +57,11 @@ app.post('/api/contact', async (req, res) => {
   }
 
   res.json({ success: true, message: 'Thank you! We will get back to you shortly.' });
+});
+
+// SPA fallback — send index.html for all non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 export default app;
