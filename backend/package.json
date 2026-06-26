@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "tsx server.ts",
-    "dev": "tsx watch server.ts",
-    "build": "cd ../frontend && npm run build",
-    "prod": "npm run build && npm start"
+    "dev": "tsx watch server.ts"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
