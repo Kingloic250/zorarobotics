@@ -36,9 +36,12 @@ export const Hero = () => {
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
-    const handler = () => { if (el.currentTime >= 50) el.currentTime = 0; };
-    el.addEventListener('timeupdate', handler);
-    return () => el.removeEventListener('timeupdate', handler);
+    const play = () => { el.play().catch(() => {}); };
+    play();
+    el.addEventListener('timeupdate', () => { if (el.currentTime >= 50) el.currentTime = 0; });
+    const retry = () => { play(); document.removeEventListener('click', retry); };
+    document.addEventListener('click', retry, { once: true });
+    return () => { document.removeEventListener('click', retry); };
   }, []);
 
   const content = {
