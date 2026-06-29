@@ -32,7 +32,7 @@ export const JourneyPage = () => {
           </h2>
           <p className="text-muted text-lg font-light">
             {language === 'en'
-              ? 'From our founding to today — tracking the milestones that define Zora Robotics Ltd.'
+              ? 'From our founding to today tracking the milestones that define Zora Robotics Ltd.'
               : 'De notre fondation à aujourd\'hui les étapes qui définissent Zora Robotics Ltd.'}
           </p>
         </motion.div>
