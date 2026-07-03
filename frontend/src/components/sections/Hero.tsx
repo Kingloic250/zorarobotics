@@ -46,7 +46,7 @@ export const Hero = () => {
 
   const content = {
     en: {
-      badge: 'Pioneering AI & Robotics v1.0',
+      badge: 'Pioneering AI & Robotics',
       headline1: 'Bringing the World\'s Most',
       headlineSpan: 'Advanced Humanoid Robots',
       headline2: 'to Africa.',
@@ -56,7 +56,7 @@ export const Hero = () => {
       scroll: 'Scroll to Discover',
     },
     fr: {
-      badge: 'Pionnier de l\'IA et de la Robotique v1.0',
+      badge: 'Pionnier de l\'IA et de la Robotique',
       headline1: 'Introduire les Robots Humano\u00efdes',
       headlineSpan: 'les Plus Avanc\u00e9s au Monde',
       headline2: 'en Afrique.',
