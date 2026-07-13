@@ -1,10 +1,11 @@
 import { motion } from 'motion/react';
 import { GlassCard } from '../components/ui/GlassCard';
 import { useLanguage } from '../context/LanguageContext';
-import { GraduationCap, HeartPulse, Factory, Building2, Shield } from 'lucide-react';
+import { GraduationCap, HeartPulse, Factory, Building2, Shield, Monitor } from 'lucide-react';
 
 const programs = [
   { icon: GraduationCap, titleEn: 'STEM Education', titleFr: 'Éducation STIM', descEn: 'Integrating robotics into school curricula across Rwanda to inspire the next generation of innovators.', descFr: 'Intégration de la robotique dans les programmes scolaires à travers le Rwanda pour inspirer la prochaine génération d\'innovateurs.' },
+  { icon: Monitor, titleEn: 'EdTech', titleFr: 'EdTech', descEn: 'Using digital tools, software, AI, and interactive learning platforms to improve education, teaching, and skills development.', descFr: 'Utilisation d\'outils numériques, de logiciels, d\'IA et de plateformes d\'apprentissage interactives pour améliorer l\'éducation, l\'enseignement et le développement des compétences.' },
   { icon: HeartPulse, titleEn: 'Healthcare Robotics', titleFr: 'Robotique de Santé', descEn: 'Deploying disinfection, telepresence, and companion robots in hospitals and clinics.', descFr: 'Déploiement de robots de désinfection, de télépresence et d\'accompagnement dans les hôpitaux et cliniques.' },
   { icon: Building2, titleEn: 'Hospitality & Retail', titleFr: 'Hôtellerie & Commerce', descEn: 'Service robots for hotels, restaurants, and retail from concierge to delivery.', descFr: 'Robots de service pour hôtels, restaurants et commerces — du concierge à la livraison.' },
   { icon: Factory, titleEn: 'Industrial Automation', titleFr: 'Automatisation Industrielle', descEn: 'Collaborative robots for manufacturing, assembly, and precision tasks in industrial settings.', descFr: 'Robots collaboratifs pour la fabrication, l\'assemblage et les tâches de précision en milieu industriel.' },
