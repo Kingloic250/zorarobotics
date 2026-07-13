@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 import { motion } from 'motion/react';
 import { Button } from '../ui/Button';
-import { Mail, Phone, MapPin, Globe, Linkedin, Twitter, Instagram, Youtube, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe, Linkedin, Twitter, Instagram, Youtube, Facebook, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export const ContactSection = () => {
@@ -124,6 +124,16 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">{c.phoneLabel}</p>
                   <a href="tel:+250788303027" className="text-lg font-medium text-foreground hover:text-accent transition-colors">{c.phone}</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6 group cursor-pointer">
+                <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-all">
+                  <MessageCircle size={18} />
+                </div>
+                <div>
+                  <p className="text-[10px] text-muted-fg uppercase tracking-widest font-bold mb-1">WhatsApp</p>
+                  <a href="https://wa.me/250788303027" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-foreground hover:text-accent transition-colors">+250 788 303 027</a>
                 </div>
               </div>
 
