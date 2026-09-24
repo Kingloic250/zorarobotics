@@ -122,7 +122,7 @@ export const PartnershipsPage = () => {
                 titleEn: 'COVID-19 Response',
                 titleFr: 'Réponse COVID-19',
                 descEn: '5 anti-epidemic robots deployed across Rwanda\'s treatment centers and Kigali International Airport a first for Africa.',
-                descFr: '5 robots anti-épidémiques déployés dans les centres de traitement et à l\'Aéroport de Kigali — une première en Afrique.',
+                descFr: '5 robots anti-épidémiques déployés dans les centres de traitement et à l\'Aéroport de Kigali, une première en Afrique.',
               },
               {
                 icon: Globe,

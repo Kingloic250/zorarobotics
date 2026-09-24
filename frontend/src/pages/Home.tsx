@@ -148,6 +148,62 @@ export const Home = () => {
         </div>
       </section>
 
+      {/* Academy CTA */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="container px-6 mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <GlassCard className="p-8 lg:p-12 border-accent/20 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent overflow-hidden" hoverGlow={false}>
+              <div className="flex flex-col lg:flex-row gap-10 items-center">
+                <div className="relative w-full lg:w-2/5 h-56 lg:h-64 overflow-hidden shrink-0 group">
+                  <img
+                    src="/images/NAO Robot.jpg"
+                    alt={language === 'en' ? 'NAO robot, Zora Robotics Academy' : 'Robot NAO, Zora Robotics Academy'}
+                    className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest font-bold text-accent border border-accent/30 bg-black/60 px-3 py-1.5">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
+                    </span>
+                    {language === 'en' ? 'Applications Now Open' : 'Candidatures Ouvertes'}
+                  </span>
+                </div>
+                <div className="flex-1 text-center lg:text-left">
+                  <span className="text-accent font-mono text-[10px] uppercase tracking-widest font-bold mb-4 block">
+                    {language === 'en' ? 'Zora Robotics Academy' : 'Zora Robotics Academy'}
+                  </span>
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 uppercase tracking-tighter text-foreground">
+                    {language === 'en' ? 'Train. Teach. Inspire the Next Generation.' : 'Former. Enseigner. Inspirer la Prochaine Génération.'}
+                  </h2>
+                  <p className="text-muted text-base font-light mb-8 max-w-2xl mx-auto lg:mx-0">
+                    {language === 'en'
+                      ? 'Become a Robotics & AI trainer and help young learners across Rwanda discover the technologies shaping the future.'
+                      : 'Devenez formateur en Robotique & IA et aidez les jeunes apprenants à travers le Rwanda à découvrir les technologies qui façonnent l’avenir.'}
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                    <Link to="/academy">
+                      <Button variant="primary" size="md" className="flex items-center gap-2">
+                        {language === 'en' ? 'Explore the Academy' : 'Explorer l’Académie'}
+                        <ArrowRight size={14} />
+                      </Button>
+                    </Link>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-muted-fg">
+                      {language === 'en' ? 'Deadline: 15 October 2026' : 'Clôture : 15 octobre 2026'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </GlassCard>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Partners Marquee */}
       <section className="py-16 border-y border-border overflow-hidden">
         <div className="text-center mb-10">

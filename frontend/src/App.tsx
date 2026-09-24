@@ -10,6 +10,7 @@ import { JourneyPage } from './pages/Journey';
 import { ProgramsPage } from './pages/Programs';
 import { SolutionsPage } from './pages/Solutions';
 import { RobotsPage } from './pages/Robots';
+import { AcademyPage } from './pages/Academy';
 import { PartnershipsPage } from './pages/Partnerships';
 import { NewsPage } from './pages/News';
 import { ContactPage } from './pages/Contact';
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="/programs" element={<ProgramsPage />} />
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/robots" element={<RobotsPage />} />
+            <Route path="/academy" element={<AcademyPage />} />
             <Route path="/partnerships" element={<PartnershipsPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/contact" element={<ContactPage />} />

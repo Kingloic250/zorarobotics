@@ -28,6 +28,7 @@ export const Footer = () => {
     { nameEn: 'Programs', nameFr: 'Programmes', to: '/programs' },
     { nameEn: 'Solutions', nameFr: 'Solutions', to: '/solutions' },
     { nameEn: 'Robots', nameFr: 'Robots', to: '/robots' },
+    { nameEn: 'Academy', nameFr: 'Académie', to: '/academy' },
     { nameEn: 'Partnerships', nameFr: 'Partenariats', to: '/partnerships' },
     { nameEn: 'News', nameFr: 'Actualités', to: '/news' },
     { nameEn: 'Contact', nameFr: 'Contact', to: '/contact' },

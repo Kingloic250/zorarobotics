@@ -27,8 +27,8 @@ export const WhyZoraRobotics = () => {
     {
       titleEn: 'ZBOS Platform',
       titleFr: 'Plateforme ZBOS',
-      descEn: 'One OS for all robot types — physical, virtual, and VR.',
-      descFr: 'Un OS pour tous les types de robots — physiques, virtuels et VR.',
+      descEn: 'One OS for all robot types: physical, virtual, and VR.',
+      descFr: 'Un OS pour tous les types de robots : physiques, virtuels et VR.',
     },
     {
       titleEn: 'Local Value Addition',

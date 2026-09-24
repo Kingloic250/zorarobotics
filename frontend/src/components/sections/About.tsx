@@ -38,7 +38,7 @@ export const About = () => {
       subtitle: '"L\'IA signifie Intelligence Artificielle."',
       tagline: 'Zora Robotics, basée à Kigali, Rwanda. Fondée en 2019, nous sommes la première entreprise à proposer des robots humanoïdes de service à travers l\'Afrique.',
       desc1: 'Nous assemblons et déployons des robots avec des solutions à valeur ajoutée, utilisant des composants provenant d\'Europe, de Corée du Sud et de Chine. Notre mission est d\'être le partenaire le plus axé sur l\'impact en Afrique dans l\'adoption des technologies émergentes en Robotique et en Intelligence Artificielle.',
-      desc2: 'Nous accélérons la transformation de l\'Afrique en un continent axé sur la connaissance et la technologie — en commençant par le Rwanda.',
+      desc2: 'Nous accélérons la transformation de l\'Afrique en un continent axé sur la connaissance et la technologie, en commençant par le Rwanda.',
       values: [
         { icon: Target, title: 'Mission', desc: 'Le partenaire le plus impactant d\'Afrique en robotique et IA.' },
         { icon: Users, title: 'Équipe', desc: '11–20 employés à Kigali, en croissance en Afrique de l\'Est.' },
