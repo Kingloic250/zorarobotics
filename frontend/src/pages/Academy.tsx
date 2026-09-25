@@ -200,7 +200,7 @@ export const AcademyPage = () => {
   return (
     <>
       {/* 1. WHAT IS ZORA ROBOTICS ACADEMY */}
-      <section id="about-academy" className="relative overflow-hidden pt-32 pb-24 scroll-mt-24">
+      <section id="about-academy" className="relative overflow-hidden pt-32 pb-24 scroll-mt-32">
         <div className="absolute inset-0 cyber-grid opacity-[0.06] pointer-events-none" />
         <div className="absolute top-[10%] right-[5%] w-[40vw] h-[40vw] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute left-0 bottom-0 w-full h-1/2 bg-linear-to-t from-accent/5 to-transparent pointer-events-none" />
@@ -307,7 +307,7 @@ export const AcademyPage = () => {
       </section>
 
       {/* 2. WHAT WILL TRAINERS DEVELOP */}
-      <section id="academy-focus" className="py-24 bg-card relative overflow-hidden scroll-mt-24">
+      <section id="academy-focus" className="py-24 bg-card relative overflow-hidden scroll-mt-32">
         <div className="container px-6 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

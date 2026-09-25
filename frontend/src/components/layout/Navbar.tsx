@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../../lib/utils';
 import { Menu, X, ChevronDown, Sun, Moon } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { AnnouncementBar } from './AnnouncementBar';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -14,6 +15,22 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const location = useLocation();
+  const headerRef = useRef<HTMLDivElement>(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useLayoutEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => setHeaderHeight(el.offsetHeight);
+    update();
+    if (typeof ResizeObserver !== 'undefined') {
+      const ro = new ResizeObserver(update);
+      ro.observe(el);
+      return () => ro.disconnect();
+    }
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -39,9 +56,12 @@ export const Navbar = () => {
   const aboutLabel = language === 'en' ? 'About' : 'À Propos';
 
   return (
+    <>
+    <div ref={headerRef} className="fixed inset-x-0 top-0 z-50">
+    <AnnouncementBar isScrolled={isScrolled} />
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-8 py-4',
+        'transition-all duration-300 px-8 py-4',
         isScrolled ? 'glass-panel border-t-0 border-x-0' : 'backdrop-blur-md'
       )}
     >
@@ -260,6 +280,9 @@ Zora Robotics
           </Link>
         </motion.div>
       )}
-    </nav>
+      </nav>
+    </div>
+    <div aria-hidden="true" style={{ height: headerHeight }} />
+    </>
   );
 };
